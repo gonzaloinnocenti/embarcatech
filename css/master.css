@@ -1,0 +1,265 @@
+/* generals */
+
+    #bgvid {
+      position: fixed;
+      z-index: -100;
+      top: auto;
+      left: 50%;
+      -ms-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      min-width: 100vw;
+      min-height: 100vh;
+    }
+
+    section {
+      background-color: #fff;
+    }
+    section > .row {
+      margin-bottom: 0px !important;
+    }
+
+    section a :not(#welcome) :not(.chip) {
+      color: rgb(0, 0, 255, 1) !important;
+      -webkit-transition: color .2s ease;
+      -o-transition: color .2s ease;
+      transition: color .2s ease;
+      transition-property: color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+      transition-delay: 0s;
+    }
+    section a:hover :not(#welcome) :not(.chip) {
+      color: rgb(102, 102, 255) !important;
+    }
+
+    h5 {
+      font-size: 2.5em;
+      margin: 1em 0em 1em 0em;
+    }
+
+    .chip {
+      background-color: rgba(0, 0, 255, 0.3);
+      color: #00f;
+      -webkit-transition: background-color .2s ease;
+      -o-transition: background-color .2s ease;
+      transition: background-color .2s ease;
+      transition-property: background-color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+      transition-delay: 0s;
+    }
+
+    .chip:hover {
+      background-color: rgba(0, 0, 255, 0.6);
+    }
+
+    /* input fields */
+
+    /* Textarea */
+
+    input, select, textarea {
+      color: #fff !important;
+    }
+
+    /* label color */
+
+    .input-field label {
+      color: #fff !important;
+    }
+
+    /* label focus color */
+
+    .input-field input[type=text]:focus+label {
+      color: #fff !important;
+    }
+
+    /* label underline focus color */
+
+    .input-field input[type=text]:focus {
+      border-bottom: 1px solid #fff !important;
+      box-shadow: 0 1px 0 0 #fff !important;
+    }
+
+    .dropdown-content li>a, .dropdown-content li>span {
+      color: #c91249 !important;
+    }
+
+    .separator {
+      width: 85% !important;
+      font-size: 1px;
+      color: rgba(0, 0, 0, 0);
+      line-height: 1px;
+      background-color: rgba(0, 0, 0, 0.19);
+      margin: auto !important;
+      margin-top: 1rem !important;
+    }
+
+    .titleTransparent {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* content */
+
+    .shadown {
+      text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.8) !important;
+    }
+
+    .content {
+      min-width: 100vw;
+      min-height: 100vh;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    .paddingTop {
+      padding-top: 1em;
+    }
+
+    .paddingTop5 {
+      padding-top: 5em;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+
+    .embarcaIcon {
+      margin: 1rem 1rem 1rem 1rem;
+      font-size: 2em;
+    }
+
+    .card .embarcaIcon {
+      margin: 1rem 1rem 1rem 1rem;
+      font-size: 2.5rem;
+    }
+
+    li span {
+      display: block;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .leftBorder {
+      border-left: 1px solid grey;
+    }
+
+
+    .noMarginBottom {
+      margin-bottom: 0px;
+    }
+
+    .verticalCenter {
+      position: relative;
+      top: 20vh;
+    }
+
+/* welcome */
+
+    #welcome {
+      background-color: rgba(48, 79, 254, 0.9);
+    }
+
+    /* navbar */
+
+    #welcome nav {
+      background-color: rgba(255, 255, 255, 0) !important;
+      box-shadow: none !important;
+      padding: 0em 1rem 0rem 1rem;
+    }
+
+    #welcome .mainLogo {
+      filter: grayscale(100%) invert(100%) brightness(10);
+      height: 5em;
+    }
+
+    #welcome nav .mainLogo {
+      filter: grayscale(100%) invert(100%) brightness(10);
+      height: 1em;
+    }
+
+    #welcome .navbarLogo {
+      filter: grayscale(100%) invert(100%) brightness(10);
+      margin-top: 0.8rem;
+      height: 2rem;
+    }
+
+    #welcome .navbarLogoLi {
+      background-color: #304ffe;
+    }
+
+
+/* Team */
+
+    #team .card .card-image img {
+      display: block;
+      border-radius: 50%;
+      position: relative;
+      left: 5%;
+      right: 0;
+      bottom: -5%;
+      width: 90%;
+      margin-top: 5%;
+    }
+    #team p {
+      text-align: left !important;
+    }
+
+    #team .options {
+      position: absolute !important;
+      right: 1em !important;
+      top: 1em !important;
+    }
+
+/* Footer */
+
+footer .mainLogo {
+  filter: grayscale(100%) invert(100%) brightness(10);
+  height: 3em;
+  position: relative;
+  top: 1em;
+}
+
+footer li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.page-footer {
+  background-color: #304ffe;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+footer .footer-copyright {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer {
+  z-index: -5;
+}
+
+footer .embarcaIcon {
+  margin: 0 0 0 0 !important;
+  font-size: 2.5rem !important;
+}
