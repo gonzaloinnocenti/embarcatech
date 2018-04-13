@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   $('.parallax').parallax();
+  $('.collapsible').collapsible();
   $('.sidenav').sidenav();
   $("a").on('click', function(event) {
     if (this.hash !== "") {

@@ -134,10 +134,6 @@
       text-align: center;
     }
 
-    #startups ul li, #investors ul li {
-      margin-top: 5em;
-    }
-
     .verticalCenter {
       position: relative;
       top: 20vh;
@@ -206,6 +202,22 @@
       position: absolute !important;
       right: 1em !important;
       top: 1em !important;
+    }
+
+/* Startup */
+
+    #startups ul li, #investors ul li {
+      margin-top: 5em;
+    }
+
+/* FAQ */
+
+    #faq .collapsible-header {
+      color: #424242;
+      font-weight:900;
+    }
+    #faq .collapsible-body span {
+      text-align: left;
     }
 
 /* Footer */
