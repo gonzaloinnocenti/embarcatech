@@ -20,7 +20,7 @@
       margin-bottom: 0px !important;
     }
 
-    section a :not(#welcome) :not(.chip) {
+    section a :not(#welcome) :not(#contact) :not(.chip) {
       color: rgb(0, 0, 255, 1) !important;
       -webkit-transition: color .2s ease;
       -o-transition: color .2s ease;
@@ -41,6 +41,9 @@
     p {
       font-size: 1.5rem;
     }
+    .card p {
+      font-size: 1.2rem;
+    }
 
     .chip {
       background-color: rgba(0, 0, 255, 0.3);
@@ -58,46 +61,6 @@
       background-color: rgba(0, 0, 255, 0.6);
     }
 
-    /* input fields */
-
-    /* Textarea */
-
-    input, select, textarea {
-      color: #fff !important;
-    }
-
-    /* label color */
-
-    .input-field label {
-      color: #fff !important;
-    }
-
-    /* label focus color */
-
-    .input-field input[type=text]:focus+label {
-      color: #fff !important;
-    }
-
-    /* label underline focus color */
-
-    .input-field input[type=text]:focus {
-      border-bottom: 1px solid #fff !important;
-      box-shadow: 0 1px 0 0 #fff !important;
-    }
-
-    .dropdown-content li>a, .dropdown-content li>span {
-      color: #c91249 !important;
-    }
-
-    .separator {
-      width: 85% !important;
-      font-size: 1px;
-      color: rgba(0, 0, 0, 0);
-      line-height: 1px;
-      background-color: rgba(0, 0, 0, 0.19);
-      margin: auto !important;
-      margin-top: 1rem !important;
-    }
 
     /* content */
 
@@ -206,8 +169,36 @@
 
 /* Startup */
 
+    #startups {
+      background-color: #e8eaf6;
+    }
+
     #startups ul li, #investors ul li {
       margin-top: 5em;
+    }
+
+
+/*Contact*/
+
+    #contact {
+      background-color: #e8eaf6;
+    }
+    #contact .card-content {
+      padding: 24px 24px 4px 24px;
+    }
+    #contact .card-content .row {
+      margin-bottom: 10px;
+    }
+    #contact .socialIcon {
+      font-size: 3rem;
+      margin-left: 3rem;
+      color: #303f9f !important;
+    }
+
+/* Media */
+
+    #media {
+      background-color: #e8eaf6;
     }
 
 /* FAQ */
@@ -222,46 +213,46 @@
 
 /* Footer */
 
-footer .mainLogo {
-  filter: grayscale(100%) invert(100%) brightness(10);
-  height: 3em;
-  position: relative;
-  top: 1em;
-}
+    footer .mainLogo {
+      filter: grayscale(100%) invert(100%) brightness(10);
+      height: 3em;
+      position: relative;
+      top: 1em;
+    }
 
-footer li {
-  display: inline-block;
-  margin-left: 1em;
-}
+    footer li {
+      display: inline-block;
+      margin-left: 1em;
+    }
 
-.page-footer {
-  background-color: #304ffe;
-}
+    .page-footer {
+      background-color: #304ffe;
+    }
 
-footer a {
-  color: rgba(255, 255, 255, 0.8);
-  -webkit-transition: color .3s ease;
-  -o-transition: color .3s ease;
-  transition: color .3s ease;
-  transition-property: color;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-}
+    footer a {
+      color: rgba(255, 255, 255, 0.8);
+      -webkit-transition: color .3s ease;
+      -o-transition: color .3s ease;
+      transition: color .3s ease;
+      transition-property: color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+      transition-delay: 0s;
+    }
 
-footer .footer-copyright {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-}
+    footer .footer-copyright {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+    }
 
-footer a:hover {
-  color: #fff;
-}
+    footer a:hover {
+      color: #fff;
+    }
 
-footer {
-  z-index: -5;
-}
+    footer {
+      z-index: -5;
+    }
 
-footer .embarcaIcon {
-  margin: 0 0 0 0 !important;
-  font-size: 2.5rem !important;
-}
+    footer .embarcaIcon {
+      margin: 0 0 0 0 !important;
+      font-size: 2.5rem !important;
+    }
