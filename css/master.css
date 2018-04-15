@@ -1,18 +1,30 @@
 /* generals */
 
-    #bgvid {
-      position: fixed;
-      z-index: -100;
-      top: auto;
-      left: 50%;
-      -ms-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-      min-width: 100vw;
-      min-height: 100vh;
+    /* for navbarScroll */
+    .nav-up {
+    top: -100px !important;
+    }
+    .sidenav-trigger {
+      position: fixed !important;
+      height: 56px !important;
+      z-index: 997 !important;
+      -webkit-transition: top 0.3s ease-in-out !important;
+      -o-transition: top 0.3s ease-in-out !important;
+      transition: top 0.3s ease-in-out !important;
+      margin: 20px !important;
     }
 
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+
+    /* Sections */
     section {
       background-color: #fff;
     }
@@ -41,10 +53,21 @@
     p {
       font-size: 1.5rem;
     }
+
+    /* cards */
+
+    .card {
+      border-radius: 25px !important;
+    }
     .card p {
       font-size: 1.2rem;
     }
+    .card .embarcaIcon {
+      margin: 1rem 1rem 1rem 1rem;
+      font-size: 2.5rem;
+    }
 
+    /* chips */
     .chip {
       background-color: rgba(0, 0, 255, 0.3);
       color: #00f;
@@ -71,24 +94,11 @@
       height: 100% !important;
     }
 
-    body {
-      font-family: 'Montserrat', sans-serif;
-      color: #fff;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      -o-user-select: none;
-      user-select: none;
-    }
+    /* Icons */
 
     .embarcaIcon {
       margin: 1rem 1rem 1rem 1rem;
       font-size: 2em;
-    }
-
-    .card .embarcaIcon {
-      margin: 1rem 1rem 1rem 1rem;
-      font-size: 2.5rem;
     }
 
     li span {
@@ -102,11 +112,29 @@
       top: 20vh;
     }
 
+    /* Buttons */
+
+    .btn, .btn-large, .btn-small {
+      border-radius: 25px !important;
+    }
 
 /* welcome */
 
+    /* Background Video and color */
     #welcome {
       background-color: rgba(48, 79, 254, 0.95);
+    }
+    #bgvid {
+      position: fixed;
+      z-index: -100;
+      top: auto;
+      left: 50%;
+      -ms-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      min-width: 100vw;
+      min-height: 100vh;
     }
 
     /* navbar */
@@ -135,6 +163,11 @@
 
     #welcome .navbarLogoLi {
       background-color: #304ffe;
+    }
+
+    #welcome .sidenav-trigger {
+      background-color: #304ffe;
+      border-radius: 100%;
     }
 
 /* Process */
