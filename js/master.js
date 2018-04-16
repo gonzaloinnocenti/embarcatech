@@ -57,3 +57,10 @@ function hasScrolled() {
 
     lastScrollTop = st;
 }
+
+// Google Analytics
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117686071-1');
