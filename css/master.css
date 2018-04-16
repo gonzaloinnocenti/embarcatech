@@ -1,18 +1,6 @@
 /* generals */
 
-    /* for navbarScroll */
-    .nav-up {
-    top: -100px !important;
-    }
-    .sidenav-trigger {
-      position: fixed !important;
-      height: 56px !important;
-      z-index: 997 !important;
-      -webkit-transition: top 0.3s ease-in-out !important;
-      -o-transition: top 0.3s ease-in-out !important;
-      transition: top 0.3s ease-in-out !important;
-      margin: 20px !important;
-    }
+
 
     body {
       font-family: 'Montserrat', sans-serif;
@@ -165,9 +153,19 @@
       background-color: #304ffe;
     }
 
+     /* for navbarScroll */
+
+    #welcome .nav-up {
+      transform: translateY(-150%) !important;
+      }
+
     #welcome .sidenav-trigger {
       background-color: #304ffe;
       border-radius: 100%;
+      position: fixed !important;
+      height: 56px !important;
+      z-index: 997 !important;
+      margin: 20px !important;
     }
 
 /* Process */

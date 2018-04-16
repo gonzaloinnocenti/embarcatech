@@ -3,6 +3,10 @@ $(document).ready(function() {
   $('.parallax').parallax();
   $('.collapsible').collapsible();
   $('.sidenav').sidenav();
+  $('.btn-show').on('click',function(){
+    $(this).parents().siblings().removeClass('hide-on-med-and-down');
+    $(this).addClass('hide-on-med-and-down');
+  });
   $("a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
@@ -43,11 +47,11 @@ function hasScrolled() {
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
-        $('.sidenav-trigger').removeClass('nav-down').addClass('nav-up');
+        $('.sidenav-trigger').addClass('nav-up');
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-            $('.sidenav-trigger').removeClass('nav-up').addClass('nav-down');
+            $('.sidenav-trigger').removeClass('nav-up');
         }
     }
 
