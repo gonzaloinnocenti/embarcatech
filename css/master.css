@@ -72,6 +72,10 @@
       background-color: rgba(0, 0, 255, 0.6);
     }
 
+    /* Modals */
+    .modal {
+      border-radius: 25px;
+    }
 
     /* content */
 
@@ -102,7 +106,7 @@
 
     /* Buttons */
 
-    .btn, .btn-large, .btn-small {
+    .btn, .btn-large, .btn-small, .btn-flat {
       border-radius: 25px !important;
     }
 
@@ -246,9 +250,10 @@
 
     footer .mainLogo {
       filter: grayscale(100%) invert(100%) brightness(10);
-      height: 3em;
+      height: 2.5em;
       position: relative;
-      top: 1em;
+      margin-bottom: 1em;
+      bottom: -0.5em;
     }
 
     footer li {

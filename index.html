@@ -24,22 +24,22 @@
   <body>
     <video autoplay="" loop="" mediagroup="5" playsinline="" muted="" poster="" id="bgvid" class="hide-on-med-and-down"><source src="img/embarcaWebm.webm" type="video/webm"></video>
     <section id="welcome" class="content">
-        <nav>
-          <div class="nav-wrapper">
-            <!-- <a href="#welcome" class="brand-logo hide-on-med-and-down"><img src="img/embarcaLogo.png" class="mainLogo" alt=""></a> -->
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger white-text btn-floating btn-large waves-effect waves-light nav-down"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#startups">StartUps</a></li>
-              <li><a href="#investors">Inversores</a></li>
-              <li><a href="#process">Proceso</a></li>
-              <li><a href="#team">Equipo</a></li>
-              <li><a href="#contact">Contacto</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#media">Medios</a></li>
-              <li><a href="#cases">Embarcados</a></li>
-            </ul>
-          </div>
-        </nav>
+      <nav>
+        <div class="nav-wrapper">
+          <!-- <a href="#welcome" class="brand-logo hide-on-med-and-down"><img src="img/embarcaLogo.png" class="mainLogo" alt=""></a> -->
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger white-text btn-floating btn-large waves-effect waves-light nav-down"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#startups">StartUps</a></li>
+            <li><a href="#investors">Inversores</a></li>
+            <li><a href="#process">Proceso</a></li>
+            <li><a href="#team">Equipo</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#media">Medios</a></li>
+            <li><a href="#cases">Embarcados</a></li>
+          </ul>
+        </div>
+      </nav>
       <ul class="sidenav" id="mobile-demo">
         <li class="navbarLogoLi"><a href="#welcome"><img src="img/embarcaLogo.png" class="navbarLogo" alt=""></a></li>
         <li><a href="#startups">StartUps</a></li>
@@ -81,11 +81,43 @@
               <a class="waves-effect waves-light btn-large indigo accent-4"><i class="material-icons left">cloud_download</i>Material Institucional</a>
             </li>
             <li>
-              <a class="waves-effect waves-light btn-large indigo accent-4"><i class="material-icons left">flight</i>Embarcar</a>
+              <!-- Modal Trigger -->
+              <a class="waves-effect waves-light btn-large indigo accent-4 modal-trigger" data-target="modal2"><i class="material-icons left">flight</i>Embarcar</a>
+              <!-- Modal Structure -->
+              <div id="modal2" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                  <form class="input-field col s12 m12 l12" action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
+                    <h4>Dejanos tus datos</h4>
+                    <p>y te contactaremos</p>
+                    <div class="row">
+                      <!-- Name Input -->
+                      <div class="input-field col s12 m6 l6">
+                        <i class="material-icons prefix">account_circle</i> <input type="text" id="mce-FNAME" class="validate" maxlength="40" required>
+                        <label for="mce-FNAME">Nombre</label>
+                      </div>
+                      <div class="input-field col s12 m6 l6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input type="text" maxlength="40" id="mce-LNAME" class="validate" required>
+                        <label for="mce-LNAME">Apellido</label>
+                      </div>
+                      <!-- Mail Input -->
+                      <div class="input-field col s12 m12 l6">
+                        <i class="material-icons prefix">email</i>                        <input type="email" maxlength="50" id="mce-EMAIL" class="validate" required>
+                        <label for="mce-EMAIL">Email</label>
+                      </div>
+                      <!-- Phone Input -->
+                      <div class="input-field col s12 m12 l6">
+                        <i class="material-icons prefix">phone</i>                        <input type="tel" maxlength="15" id="mce-PHONE" class="validate" required>
+                        <label for="mce-PHONE">Telefono</label>
+                      </div>
+                    </div>
+                    <button href="#!" type="submit" class="modal-action waves-effect waves-green btn-flat" name="action">Enviar</button>
+                  </form>
+                </div>
             </li>
           </ul>
+          </div>
         </div>
-      </div>
     </section>
     <section id="investors" class="content">
       <div class="row container grey-text text-darken-2">
@@ -440,7 +472,11 @@
             </div>
           </div>
         </div>
-        <div class="col s12 m12 l12 center hide-on-large-only "><a class="btn grey accent-4 btn-show">Mostrar más</a></div>
+        <div class="col s12 m12 l12 center hide-on-large-only">
+          <div class="row">
+            <a class="btn grey lighten-1 btn-show">Mostrar más</a>
+          </div>
+        </div>
       </div>
     </section>
     <section id="cases" class="content container">
@@ -484,7 +520,11 @@
             </div>
           </div>
         </div>
-        <div class="col s12 m12 l12 center hide-on-large-only "><a class="btn grey accent-4 btn-show">Mostrar más</a></div>
+        <div class="col s12 m12 l12 center hide-on-large-only">
+          <div class="row">
+            <a class="btn grey lighten-1 btn-show">Mostrar más</a>
+          </div>
+        </div>
       </div>
     </section>
     <footer id="footer" class="page-footer">
@@ -492,18 +532,15 @@
         <div class="row"></div>
         <div class="row">
           <!-- Col 1 -->
-          <div class="col s12 m12 l4 ">
+          <div class="col s12 m6 l4 center">
             <img src="img/embarcaLogo.png" class="mainLogo" alt="Embarca">
           </div>
           <!-- Col 2 -->
-          <div class="col s12 m12 l4">
-            <ul class="grey-text text-lighten-1">
-              <!-- <li><i class="fas fa-envelope white-text text-accent-2"></i> valen@embarca.tech <br></li> -->
-              <li><a href="https://goo.gl/maps/t7w5bUkVaJy" target="_blank"> <i class="fas fa-map-marker-alt white-text text-accent-2"></i> Campus Olegario</a></li>
-            </ul>
+          <div class="col s12 m6 l4 center">
+            <a href="https://goo.gl/maps/t7w5bUkVaJy" class="waves-effect waves-dark btn-large indigo-text text-accent-4 white" target="_blank"><i class="material-icons left">location_on</i>Campus Olegario</a>
           </div>
           <!-- Col 3 -->
-          <div class="col s12 m12 l4">
+          <div class="col s12 m12 l4 center">
             <ul>
               <li><a href="https://github.com/frani/embarcatech" target="_blank"><i class="fab fa-github embarcaIcon card-action"></i></a></li>
               <li><a href="#"><i class="fab fa-twitter embarcaIcon card-action"></i></a></li>
@@ -519,8 +556,13 @@
       </div>
     </footer>
 
+    <!-- Jquery & Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+    <script src="js/hideScroller.js" type="text/javascript"></script>
+    <!-- MailChimp -->
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117686071-1"></script>
     <script src="js/master.js" charset="utf-8" type="text/javascript"></script>
   </body>

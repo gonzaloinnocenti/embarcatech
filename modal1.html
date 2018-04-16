@@ -1,0 +1,43 @@
+<a class="waves-effect waves-light btn-large indigo accent-4 modal-trigger" data-target="modal1"><i class="material-icons left">flight</i>Embarcar</a>
+<!-- Modal Structure -->
+<div id="modal1" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h4>Dejanos un Mensajito</h4>
+    <p>A bunch of text</p>
+    <form class="input-field col s12 m12 l12" action="#" method="post">
+      <div class="row">
+        <!-- Name Input -->
+        <div class="input-field col s6 m6 l6">
+          <i class="fas prefix fa-user-circle"></i>
+          <input type="text" id="name" class="validate" maxlength="40" required>
+          <label for="name">Nombre</label>
+        </div>
+        <div class="input-field col s6 m6 l6">
+          <input type="text" maxlength="40" id="lastname" class="validate" required>
+          <label for="lastname">Apellido</label>
+        </div>
+        <!-- Mail Input -->
+          <div class="input-field col s12 m12 l6">
+            <i class="fas prefix fa-envelope"></i>
+            <input type="email" maxlength="50" id="email" class="validate" required>
+            <label for="email">Email</label>
+          </div>
+          <!-- Phone Input -->
+          <div class="input-field col s12 m12 l6">
+            <i class="fas prefix fa-phone"></i>
+            <input type="tel" maxlength="15" id="phone" class="validate" required>
+            <label for="phone">Telefono</label>
+          </div>
+          <!-- Textarea input -->
+          <div class="input-field col s12">
+            <i class="material-icons prefix">message</i>
+             <textarea id="textarea1" class="materialize-textarea" data-length="120" required></textarea>
+             <label for="textarea1">Textarea</label>
+           </div>
+          </div>
+  </div>
+  <div class="modal-footer">
+    <button href="#!" type="submit" class="modal-action waves-effect waves-green btn-flat" name="action">Enviar</button>
+  </div>
+  </form>
+</div>
