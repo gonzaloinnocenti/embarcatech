@@ -111,7 +111,7 @@
                         <label for="mce-PHONE">Telefono</label>
                       </div>
                     </div>
-                    <button href="#!" type="submit" class="modal-action waves-effect waves-green btn-flat" name="action">Enviar</button>
+                    <button href="#!" type="submit" class="modal-action waves-effect waves-green btn-flat" name="action" id="mc-embedded-subscribe">Enviar</button>
                   </form>
                 </div>
             </li>
@@ -321,35 +321,31 @@
           <div class="card">
             <div class="card-content">
               <div class="row">
-                <form class="input-field col s12 m12 l12" action="#" method="post">
+                <form class="input-field col s12 m12 l12" ction="https://tech.us18.list-manage.com/subscribe/post?u=91678bdda30ec527ba5bbebf7&amp;id=97f0a940d2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
                   <!-- Name Input -->
-                  <div class="row">
-                    <div class="input-field col s6 m6 l6">
+                  <div class="row" id="mc_embed_signup_scroll">
+                    <div class="input-field col s6 m6 l6 mc-field-group">
                       <i class="fas prefix fa-user-circle"></i>
-                      <input type="text" id="name" class="validate" maxlength="40" required>
+                      <input maxlength="40" required type="text" value="" name="FNAME"
+                    id="mce-FNAME" tabindex="">
                       <label for="name">Nombre</label>
                     </div>
-                    <div class="input-field col s6 m6 l6">
-                      <input type="text" maxlength="40" id="lastname" class="validate" required>
-                      <label for="lastname">Apellido</label>
+                    <div class="input-field col s6 m6 l6 mc-field-group">
+                      <input type="text" maxlength="40" id="mce-LNAME" tabindex="2" name="mce-LNAME"class="validate" required>
+                      <label for="mce-LNAME">Apellido</label>
                     </div>
-                  </div>
                   <!-- Mail Input -->
-                  <div class="row">
-                    <div class="input-field col s12 m12 l12">
+                    <div class="input-field col s12 m12 l12 mc-field-group">
                       <i class="fas prefix fa-envelope"></i>
-                      <input type="email" maxlength="50" id="email" class="validate" required>
-                      <label for="email">Email</label>
+                      <input type="email" name="EMAIL" maxlength="50" id="mce-EMAIL" class="validate" required tabindex="3">
+                      <label for="EMAIL">Email</label>
                     </div>
-                  </div>
                   <!-- Phone Input -->
-                  <div class="row">
-                    <div class="input-field col s12 m12 l12">
+                    <div class="input-field col s12 m12 l12 mc-field-group">
                       <i class="fas prefix fa-phone"></i>
-                      <input type="tel" maxlength="15" id="phone" class="validate" required>
-                      <label for="phone">Telefono</label>
+                      <input type="tel" maxlength="15" id="mce-PHONE" name="PHONE" class="validate" required tabindex="4">
+                      <label for="mce-PHONE">Telefono</label>
                     </div>
-                  </div>
                   <!-- Checkbox
                   <div class="row checkbox">
                     <div class="col s12 m12 l12 center">
@@ -361,9 +357,7 @@
                   </div>
                    -->
                   <!-- Sign up button -->
-                  <div class="row center">
-                    <button class="btn-large waves-effect waves-light center indigo accent-3" type="submit" name="action">Subscribirme</i></button>
-                  </div>
+                    <button class="btn-large waves-effect waves-light center indigo accent-3"  type="submit" value="Subscribe" name="subscribe" tabindex="5" id="mc-embedded-subscribe">Subscribirme</i></button>
                 </form>
               </div>
             </div>
@@ -564,6 +558,7 @@
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117686071-1"></script>
+    <!-- Master -->
     <script src="js/master.js" charset="utf-8" type="text/javascript"></script>
   </body>
 
