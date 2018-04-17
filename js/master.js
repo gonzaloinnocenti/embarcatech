@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-  $('.modal').modal();
   $('.collapsible').collapsible();
   $('.sidenav').sidenav();
   $('textarea').characterCounter();
@@ -19,6 +18,7 @@ $(document).ready(function() {
       });
     }
   });
+  $('.modal').modal();
 });
 
 // Google Analytics
