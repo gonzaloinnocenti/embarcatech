@@ -235,6 +235,18 @@
     #media {
       background-color: #e8eaf6;
     }
+    #media p {
+      font-size: 1rem;
+      color: #616161 !important;
+    }
+    #media .col {
+      margin-bottom: 30px;
+    }
+
+    #media .mediaLogo {
+      width: 50%;
+      filter: grayscale(100%);
+    }
 
 /* FAQ */
 
