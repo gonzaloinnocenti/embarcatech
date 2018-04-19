@@ -44,7 +44,7 @@
 
     /* cards */
 
-    .card {
+    .card, .card-reveal {
       border-radius: 25px !important;
     }
     .card p {
@@ -177,109 +177,109 @@
 
 /* Process */
 
-#process {
-  background-image: -webkit-linear-gradient(left, #eca9f7 10%, #b6c1ff);
-	background-image: -o-linear-gradient(left, #D500F9 10%, #304FFE);
-	/*background-image: linear-gradient(to right, #D500F9 10%, #304FFE);*/
-}
+  #process {
+    background-image: -webkit-linear-gradient(left, #eca9f7 10%, #b6c1ff);
+  	background-image: -o-linear-gradient(left, #D500F9 10%, #304FFE);
+  	/*background-image: linear-gradient(to right, #D500F9 10%, #304FFE);*/
+  }
 
-#process .btn, #process .btn-large, #process .btn-flat {
-  background-color: rgba(0, 0, 0, 0.4);
-}
+  #process .btn, #process .btn-large, #process .btn-flat {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 
-#process .timeline {
-  position: relative;
-}
+  #process .timeline {
+    position: relative;
+  }
 
-#process .timeline .timeline-event {
-  position: relative;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
+  #process .timeline .timeline-event {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 
-#process .timeline .timeline-event .timeline-content {
-  position: relative;
-  width: calc(50% - 50px);
-}
-
-#process .timeline .timeline-event::before {
-  display: block;
-  content: "";
-  width: 2px;
-  height: calc(50% - 30px);
-  position: absolute;
-  background: #fff !important;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  left: calc(50% - 1px);
-  top: 0;
-}
-
-#process .timeline .timeline-event::after {
-  display: block;
-  content: "";
-  width: 2px;
-  height: calc(50% - 30px);
-  position: absolute;
-  background: #fff !important;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  left: calc(50% - 1px);
-  top: calc(50% + 30px);
-}
-
-#process .timeline .timeline-event:first-child::before {
-  display: none;
-}
-
-#process .timeline .timeline-event:last-child::after {
-  display: none;
-}
-
-#process .timeline .timeline-event:nth-child(even) .timeline-content {
-  margin-left: calc(50% + 50px);
-}
-
-#process .timeline .timeline-event:nth-child(odd) .timeline-content {
-  margin-left: 0;
-}
-
-#process .timeline .timeline-badge {
-  display: block;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background: #fff !important;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  top: calc(50% - 20px);
-  right: calc(50% - 20px);
-  border-radius: 50%;
-  cursor: default;
-}
-
-#process .timeline .timeline-badge i {
-  font-size: 25px;
-  line-height: 40px;
-}
-
-@media (max-width: 600px) {
   #process .timeline .timeline-event .timeline-content {
-    width: calc(100% - 70px);
+    position: relative;
+    width: calc(50% - 50px);
   }
+
   #process .timeline .timeline-event::before {
-    left: 19px;
+    display: block;
+    content: "";
+    width: 2px;
+    height: calc(50% - 30px);
+    position: absolute;
+    background: #fff !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    left: calc(50% - 1px);
+    top: 0;
   }
+
   #process .timeline .timeline-event::after {
-    left: 19px;
+    display: block;
+    content: "";
+    width: 2px;
+    height: calc(50% - 30px);
+    position: absolute;
+    background: #fff !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    left: calc(50% - 1px);
+    top: calc(50% + 30px);
   }
+
+  #process .timeline .timeline-event:first-child::before {
+    display: none;
+  }
+
+  #process .timeline .timeline-event:last-child::after {
+    display: none;
+  }
+
   #process .timeline .timeline-event:nth-child(even) .timeline-content {
-    margin-left: 70px;
+    margin-left: calc(50% + 50px);
   }
+
   #process .timeline .timeline-event:nth-child(odd) .timeline-content {
-    margin-left: 70px;
+    margin-left: 0;
   }
+
   #process .timeline .timeline-badge {
-    left: 0;
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #fff !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    top: calc(50% - 20px);
+    right: calc(50% - 20px);
+    border-radius: 50%;
+    cursor: default;
   }
-}
+
+  #process .timeline .timeline-badge i {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  @media (max-width: 600px) {
+    #process .timeline .timeline-event .timeline-content {
+      width: calc(100% - 70px);
+    }
+    #process .timeline .timeline-event::before {
+      left: 19px;
+    }
+    #process .timeline .timeline-event::after {
+      left: 19px;
+    }
+    #process .timeline .timeline-event:nth-child(even) .timeline-content {
+      margin-left: 70px;
+    }
+    #process .timeline .timeline-event:nth-child(odd) .timeline-content {
+      margin-left: 70px;
+    }
+    #process .timeline .timeline-badge {
+      left: 0;
+    }
+  }
    #process ul li {
      width: 100%;
      color: #000;
