@@ -20,8 +20,8 @@
       margin-bottom: 0px !important;
     }
 
-    section a :not(#welcome) :not(#contact) :not(.chip) {
-      color: rgb(0, 0, 255, 1) !important;
+    #team a:hover :not(.chip), #contact a:hover {
+      color: rgb(102, 102, 255) !important;
       -webkit-transition: color .2s ease;
       -o-transition: color .2s ease;
       transition: color .2s ease;
@@ -30,17 +30,25 @@
       transition-timing-function: ease;
       transition-delay: 0s;
     }
-    section a:hover :not(#welcome) :not(.chip) {
-      color: rgb(102, 102, 255) !important;
+
+    #startups, #contact, #investors, #team, #faq {
+      background-repeat: repeat;
+      background-image: url("../img/bgPattern.png");
+      transition:width 0.1s;
+       -webkit-transition:width 0.1s; /* Safari and Chrome */
+       -moz-transition:width 0.1s; /* Firefox 4 */
+       -o-transition:width 0.1s; /* Opera */
+       transition:width 0.1s; /* Opera */
     }
 
     h5 {
-      font-size: 2em;
+      font-size: 2.5em;
       margin: 1em 0em 1em 0em;
     }
     p {
       font-size: 1.5rem;
     }
+
 
     /* cards */
 
@@ -318,8 +326,7 @@
    }
 
    #process .collapsible-header, .collapsible-body {
-     border-bottom: none !important;
-     border-radius: 25px;
+     background-color: #fff;
    }
 
     #process .embarcaIcon {
@@ -380,7 +387,6 @@
     #contact .socialIcon {
       font-size: 3rem;
       margin-left: 3rem;
-      color: #303f9f !important;
     }
 
 /* Media */
