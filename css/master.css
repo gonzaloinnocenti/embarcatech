@@ -20,7 +20,7 @@
       margin-bottom: 0px !important;
     }
 
-    #team a:hover :not(.chip), #contact a:hover, #media a:hover p {
+    #team a:hover :not(.chip), #contact a:hover, #media a:hover p, #cases a:hover p {
       color: rgb(102, 102, 255) !important;
       -webkit-transition: color .5s ease;
       -o-transition: color .5s ease;
@@ -394,7 +394,7 @@
     #media {
       background-color: #e8eaf6;
     }
-    #media p {
+    #media p, #cases p {
       font-size: 1rem;
       color: #616161 !important;
     }
@@ -415,6 +415,13 @@
     }
     #faq .collapsible-body span {
       text-align: left;
+    }
+
+/* Cases */
+
+    #cases img {
+      width: 60%;
+      margin: 3em 0 0 0;
     }
 
 /* Footer */
