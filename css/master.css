@@ -20,13 +20,13 @@
       margin-bottom: 0px !important;
     }
 
-    #team a:hover :not(.chip), #contact a:hover, #media a:hover {
+    #team a:hover :not(.chip), #contact a:hover, #media a:hover p {
       color: rgb(102, 102, 255) !important;
-      -webkit-transition: color .2s ease;
-      -o-transition: color .2s ease;
-      transition: color .2s ease;
+      -webkit-transition: color .5s ease;
+      -o-transition: color .5s ease;
+      transition: color .5s ease;
       transition-property: color;
-      transition-duration: 0.2s;
+      transition-duration: 0.5s;
       transition-timing-function: ease;
       transition-delay: 0s;
     }
