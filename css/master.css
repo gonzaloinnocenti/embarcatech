@@ -20,7 +20,7 @@
       margin-bottom: 0px !important;
     }
 
-    #team a:hover :not(.chip), #contact a:hover {
+    #team a:hover :not(.chip), #contact a:hover, #media a:hover {
       color: rgb(102, 102, 255) !important;
       -webkit-transition: color .2s ease;
       -o-transition: color .2s ease;
