@@ -43,7 +43,7 @@
 
     h5 {
       font-size: 2.5em;
-      margin: 1em 0em 1em 0em;
+      margin: 1em 0em 0em 0em;
     }
     p {
       font-size: 1.5rem;
@@ -182,7 +182,14 @@
       z-index: 997 !important;
       margin: 20px !important;
     }
-
+/* Mindepro */
+  #mindepro p {
+    font-size: 1.2em;
+  }
+  #mindepro img{
+    width: 20em;
+    margin: 1em 0em -1em 0em;
+  }
 /* Process */
 
   #process {
@@ -358,8 +365,8 @@
 
     #team .options {
       position: absolute !important;
-      right: 1em !important;
-      top: 1em !important;
+      right: 0.5em !important;
+      top: 0.5em !important;
     }
 
 /* Startup */
@@ -370,6 +377,12 @@
 
     #startups ul li, #investors ul li {
       margin-top: 5em;
+    }
+
+
+/* Inverstors */
+    #investors {
+      text-align: right;
     }
 
 
