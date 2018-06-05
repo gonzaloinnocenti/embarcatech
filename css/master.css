@@ -123,7 +123,7 @@
 
 /* Call to Embarcar */
     #callToEmbarcar {
-      display: none;
+      display: none !important;
       position: fixed;
       top: 0;
       z-index: 999;
