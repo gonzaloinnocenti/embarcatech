@@ -121,6 +121,14 @@
       border-radius: 25px !important;
     }
 
+/* Call to Embarcar */
+    #callToEmbarcar {
+      display: none;
+      position: fixed;
+      top: 0;
+      z-index: 999;
+    }
+
 /* welcome */
 
     /* Background Video and color */
@@ -182,13 +190,35 @@
       z-index: 997 !important;
       margin: 20px !important;
     }
+
+/* countdownBanner */
+
+#countdownBanner {
+  display: none;
+  position: fixed;
+  text-align: center;
+  background: #262626;
+  box-shadow: 0 2px 0 rgba(38,38,38,0.2);
+  z-index: 99;
+  width: 100%;
+  top: 0;
+}
+#countdownBanner p {
+  font-size: 1em;
+}
+#countdownBanner span {
+  color: #c62828;
+}
+#countdownBanner a {
+  margin: -0.5em 1em 0em 1em;
+}
 /* Mindepro */
   #mindepro p {
     font-size: 1.2em;
   }
   #mindepro img{
-    width: 20em;
-    margin: 1em 0em -1em 0em;
+    height: 6em;
+    margin: 2em 0em 0em 0em;
   }
 /* Process */
 
@@ -378,11 +408,19 @@
     #startups ul li, #investors ul li {
       margin-top: 5em;
     }
+    #startups .numberCounterUp {
+      font-size: 2.5em;
+      margin-top: .2em;
+    }
 
 
 /* Inverstors */
     #investors {
       text-align: right;
+    }
+
+    #investors .numberCounterUp2 {
+      font-size: 1.3em;
     }
 
 
