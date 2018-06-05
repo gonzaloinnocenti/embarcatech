@@ -25,9 +25,62 @@
   <body>
     <video autoplay="" loop="" mediagroup="5" playsinline="" muted="" poster="" id="bgvid" class="hide-on-med-and-down"><source src="img/embarcaWebm.webm" type="video/webm"></video>
     <div id="countdownBanner">
-      <p>🚀 🚀 Puertas de embarque abiertas, quedan  <span id="cddays"></span> Días <span id="cdhours"></span> Horas <span id="cdminutes"></span> Minutos <span id="cdseconds"></span> Segundos 🚀 🚀 <a href="#startups">Inscribirme</a>
+      <p>🚀 🚀 Puertas de embarque abiertas, quedan  <span id="cddays"></span> Días <span id="cdhours"></span> Horas <span id="cdminutes"></span> Minutos <span id="cdseconds"></span> Segundos 🚀 🚀 <a href="#" class="modal-trigger" data-target="modal2">Inscribirme</a>
         <!-- <a class="right waves-effect waves-red btn-flat white-text" id="closeCDBanner">X</a> -->
       </p>
+      <div id="modal2" class="modal modal-fixed-footer grey-text text-darken-2">
+        <div class="modal-content">
+          <header>
+            <h5>Te contactaremos</h5>
+            <p></p>
+          </header>
+          <div id="mc_embed_signup">
+            <form class="input-field col s12 m12 l12" action="https://campusolegario.us15.list-manage.com/subscribe/post?u=44d094ac72000b24ef7fd8bc2&amp;id=4f8723ac89" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate>
+              <div class="row">
+                <!-- Name Input -->
+                <div class="input-field col s12 m12 l6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input maxlength="40" required type="text" name="FNAME" id="mce-FNAME" placeholder="Nombre">
+                </div>
+                <div class="input-field col s12 m12 l6 mc-field-group">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input type="text" maxlength="40" id="mce-LNAME" name="LNAME" class="validate" required placeholder="Apellido">
+                </div>
+                <!-- Mail Input -->
+                <div class="input-field col s12 m12 l6 mc-field-group">
+                  <i class="material-icons prefix">email</i>
+                  <input type="email" name="EMAIL" maxlength="50" id="mce-EMAIL" class="validate" required placeholder="Email">
+                </div>
+                <!-- Phone Input -->
+                <div class="input-field col s12 m12 l6 mc-field-group">
+                  <i class="material-icons prefix">phone</i>
+                  <input type="tel" maxlength="15" id="mce-PHONE" name="PHONE" class="validate" required placeholder="Telefono">
+                </div>
+
+                <input type="text" name="TFORM" id="mce-TFORM" value="Emprendedor" style="display: none;">
+                <div class="col s12 m12 l12">
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_44d094ac72000b24ef7fd8bc2_4f8723ac89" tabindex="-1" value="">
+                  </div>
+                </div>
+              </div>
+              <!-- Sign up button
+              <div class="col s12 m12 l12 center">
+                <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-large waves-effect waves-light center indigo accent-3" tabindex="5"> enviar</i></button>
+              </div> -->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Cerrar</a>
+          <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn waves-effect waves-light center indigo accent-3"> enviar</i></button>
+          </form>
+        </div>
+      </div>
     </div>
     <section id="callToEmbarcar" class="content">
       <div class="row container grey-text">
@@ -213,7 +266,6 @@
         <!-- content -->
         <div class="col s12 m12 l6 right">
           <h5>El fondo es abierto y te permite diversificar tu riesgo.
-</h5>
           <p>Ser inversor en tecnología es invertir en la industria que mas crecimiento tiene en el mundo y también el futuro de mendoza. <br>En embarca destinamos los fondos solo a proyectos que estén en Mendoza, para que los emprendedores consigan hacer crecer sus proyectos, hacerlos exitosos y con beneficios para vos también.</p>
           <p>Invertí en ellos a través de los fondos de embarca, sumáte a los equipos que piensan en grande y cambiemos nuestra provincia y el mundo.</p>
         </div>
