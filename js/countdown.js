@@ -5,7 +5,7 @@ const second = 1000,
 var callflag = true;
 
 let countDown = new Date('aug 14, 2018 00:00:00').getTime(),
- maxCountDown = new Date('aug 16, 2018 12:30:00').getTime(),
+ maxCountDown = new Date('aug 16, 2018 00:00:00').getTime(),
   x = setInterval(function() {
     let now = new Date().getTime(),
       distance = countDown - now;
