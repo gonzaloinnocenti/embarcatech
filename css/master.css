@@ -6,12 +6,14 @@
      -o-transform: scale(1.1);
      -ms-transform: scale(1.1);
      transform: scale(1.1);
-     transition: .3s ease-out !important;
     }
     .card-image {
       overflow: hidden !important;
       border-radius: 25px !important;
       margin: 2px 2px;
+    }
+    .card .card-image img {
+      transition: .3s ease !important;
     }
 
     .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
