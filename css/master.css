@@ -1,6 +1,22 @@
 /* generals */
 
+   .card:hover .card-image img {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     transform: scale(1.1);
+     transition: .3s ease-out !important;
+    }
+    .card-image {
+      overflow: hidden !important;
+      border-radius: 25px !important;
+      margin: 2px 2px;
+    }
 
+    .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+      box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.2);
+    }
 
     body {
       font-family: 'Montserrat', sans-serif;
@@ -381,13 +397,8 @@
 
     #team .card .card-image img {
       display: block;
-      border-radius: 50%;
       position: relative;
-      left: 5%;
-      right: 0;
-      bottom: -5%;
-      width: 90%;
-      margin-top: 5%;
+      width: 100%;
     }
     #team p {
       text-align: left !important;
