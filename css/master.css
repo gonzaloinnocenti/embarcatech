@@ -151,7 +151,7 @@
 
     /* Background Video and color */
     #welcome {
-      background-color: rgba(48, 79, 254, 0.95);
+      background-color: rgba(48, 79, 254, 0.8);
     }
     #bgvid {
       position: fixed;
@@ -466,9 +466,20 @@
       margin-bottom: 30px;
     }
 
-    #media .mediaLogo {
-      width: 50%;
-      filter: grayscale(100%);
+    #media img {
+      width: 80%;
+      margin: 3em 0 0 0;
+      -webkit-filter: grayscale(70%) ;
+      -o-filter: grayscale(70%) ;
+      filter: grayscale(70%) ;
+      -webkit-transition: ease 0.3s ;
+      -o-transition: ease 0.3s ;
+      transition: ease 0.3s ;
+    }
+    #media .center:hover img  {
+      -webkit-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
+      filter: grayscale(0%);
     }
 
 /* FAQ */
@@ -486,6 +497,17 @@
     #cases img {
       width: 60%;
       margin: 3em 0 0 0;
+      -webkit-filter: grayscale(70%);
+      -o-filter: grayscale(70%);
+      filter: grayscale(70%);
+      -webkit-transition: ease 0.3s ;
+      -o-transition: ease 0.3s ;
+      transition: ease 0.3s ;
+    }
+    #cases img:hover {
+      -webkit-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
+      filter: grayscale(0%);
     }
 
 /* Footer */
