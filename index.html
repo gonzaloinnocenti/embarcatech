@@ -8,11 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="mobile-web-app-capable" content="yes">
-    <title> Embarca </title>
+    <title> Embarca - Aceleradora Tecnológica </title>
     <!-- Icon -->
     <link rel="icon" href="img/embarcaIcon.png" type="image/png">
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118237284-1"></script>
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-118237284-1', 'auto');
+      ga('send', 'pageview');
+    </script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
     <link rel="stylesheet" href="css/master.css">
@@ -23,8 +37,7 @@
   </head>
 
   <body>
-    <div id="google_translate_element"></div>
-    <video autoplay="" loop="" mediagroup="5" playsinline="" muted="" poster="" id="bgvid" class="hide-on-med-and-down"><source src="img/embarcaWebm.webm" type="video/webm"></video>
+    <video autoplay="" loop="" mediagroup="5" playsinline="" muted="" id="bgvid" poster="img/poster.jpg"><source src="img/embarcaWebm.webm" type="video/webm"></video>
     <div id="countdownBanner">
       <p>🚀 🚀 Puerta de embarque abiertas, quedan  <span id="cddays"></span> Días <span id="cdhours"></span> Horas <span id="cdminutes"></span> Minutos <span id="cdseconds"></span> Segundos  🚀 🚀 <a href="#" class="modal-trigger" data-target="modal2">Inscribirme</a>
         <!-- <a class="right waves-effect waves-red btn-flat white-text" id="closeCDBanner">X</a> -->
@@ -88,8 +101,8 @@
         <div class="row">
           <div class="col s12 m6">
             <h5>Ultimo Llamado a <b>Embarcar</b></h5>
-            <p>Las compuertas se cierran y estás en tu ultimo día de poder ingresar.</p>
-            <p>Por favor emprendedores presentarse con urgencia para tomar el proximo vuelo.</p>
+            <p>Las compuertas se cierran y estás en tus ultimos día de poder ingresar.</p>
+            <p>Por favor emprendedores presentarse con urgencia para embarcar el proximo vuelo.</p>
             <div class="row">
               <div class="col s12 center">
                 <a class="waves-effect waves-light btn-large indigo accent-4 modal-trigger" data-target="modal2"><i class="material-icons left">flight</i>¡Embarcar!</a>
@@ -98,7 +111,7 @@
             <div class="row">
               <div class="col s12 center">
                 <a class="waves-effect waves-red btn-flat" id="closeCallToEmbarcar">Ocultar Llamado</a>
-            </div>
+              </div>
             </div>
           </div>
         </div>
@@ -148,7 +161,7 @@
       <div class="row container  grey-text">
         <div class="col s12 m6 center">
           <img src="img/mindepro.png">
-          <p><i>Ganadora del fondo de expansion del Ministerio de Producción. <br>Presidencia de la Nación.</i></p>
+          <p><i>Ganadora del fondo de aceleración del Ministerio de Producción. <br>Presidencia de la Nación.</i></p>
         </div>
         <div class="col s12 m6 center">
           <img src="img/gan.png">
@@ -161,13 +174,13 @@
         <!-- Title -->
         <div class="row">
           <div class="div col s12">
-            <h5 class="grey-text text-darken-4 left">  Subite a nuestro próximo vuelo.</h5>
+            <h5 class="grey-text text-darken-4 left">  Subite a nuestro próximo vuelo</h5>
           </div>
         </div>
         <!-- content -->
         <div class="col s12 m12 l6">
           <h5></h5>
-          <p>Si sos emprendedor y tenés tu propia StartUp ésta es la oportunidad para que inicies el gran viaje que puede cambiar tu vida. Vamos a acompañarte y hacer que tu emprendimiento desbloquee niveles. <b>Inversiones, Mentores, Red de Contacto</b>            para que eso que hoy ya está en marcha sea el próximo emprendimiento que cambie el mundo.</p>
+          <p>Si sos emprendedor y tenés tu propia StartUp, ésta es la oportunidad para que inicies el gran viaje que puede cambiar tu vida. Vamos a acompañarte y hacer que tu emprendimiento desbloquee niveles. <b>Inversiones, Mentores, Red de Contacto</b>            para que eso que hoy ya está en marcha sea el próximo emprendimiento que cambie el mundo.</p>
         </div>
         <div class="col s12 m12 l6">
           <div class="card">
@@ -180,11 +193,11 @@
                 </div>
                 <div class="col s12 m4">
                   <p style="margin-left: -0.5em;">PreAcelerados</p>
-                  <div class="numberCounterUp">22</div>
+                  <div class="numberCounterUp">18</div>
                 </div>
                 <div class="col s12 m4">
-                  <p>  Acelerados</p>
-                  <div class="numberCounterUp">5</div>
+                  <p> Acelerados</p>
+                  <div class="numberCounterUp">10</div>
                 </div>
               </div>
             </div>
@@ -195,7 +208,7 @@
             </li>
             <li>
               <!-- Modal Trigger -->
-              <a class="waves-effect waves-light btn-large indigo accent-4 modal-trigger" data-target="modal2"><i class="material-icons left">flight</i>Inscribirme</a>
+              <a class="waves-effect waves-light btn-large indigo accent-4 modal-trigger" href="https://www.f6s.com/embarca2018-02/apply" target="_blank"><i class="material-icons left">flight</i>Inscribirme</a>
               <!-- Modal Structure -->
               <div id="modal2" class="modal modal-fixed-footer">
                 <div class="modal-content">
@@ -258,7 +271,7 @@
       <div class="row container grey-text text-darken-2">
         <!-- Title -->
         <div class="col s12 center grey-text text-darken-2">
-          <p>Vos podés tambien invertir en tecnología hecha en Mendoza.</p>
+          <p>Vos podés también invertir en tecnología hecha en Mendoza.</p>
         </div>
         <div class="row grey-text text-darken-4">
           <div class="div col s12">
@@ -267,8 +280,8 @@
         <!-- content -->
         <div class="col s12 m12 l6 right">
           <h5>El fondo es abierto y te permite diversificar tu riesgo.
-          <p>Ser inversor en tecnología es invertir en la industria que mas crecimiento tiene en el mundo y también el futuro de mendoza. <br>En embarca destinamos los fondos solo a proyectos que estén en Mendoza, para que los emprendedores consigan hacer crecer sus proyectos, hacerlos exitosos y con beneficios para vos también.</p>
-          <p>Invertí en ellos a través de los fondos de embarca, sumáte a los equipos que piensan en grande y cambiemos nuestra provincia y el mundo.</p>
+          <p>Ser inversor en tecnología es invertir en la industria que más crecimiento tiene en el mundo y también el futuro de Mendoza. <br>En Embarca destinamos los fondos para que los emprendedores consigan hacer crecer sus proyectos, hacerlos exitosos y con beneficios para vos también.</p>
+          <p>Invertí en ellos a través de los fondos de Embarca, sumáte a los equipos que piensan en grande y cambiemos nuestra provincia y el mundo.</p>
         </div>
         <div class="col s12 m12 l6">
           <div class="card">
@@ -287,8 +300,8 @@
                 </div>
               </div>
               <div class="row center">
-                <div class="col s12"><i>Miembre de <a href="http://arcap.org/" target="_blank">ArCap</a></i></div>
-                <div class="col s12"><i>Alcanzados por beníficio impositivo <a href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/273567/norma.htm" target="_blank">Ley 27.349.</a> Inscripta en <a href="http://www.afip.gob.ar/noticias/20170412ApoyoEmprendedor.asp" target="-_blank">RICE</a></i></div>
+                <!-- <div class="col s12"><i>Miembre de <a href="http://arcap.org/" target="_blank">ArCap</a></i></div> -->
+                <div class="col s12"><i>Alcanzados por beneficio impositivo <a href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/273567/norma.htm" target="_blank">Ley 27.349.</a> Inscripta en <a href="http://www.afip.gob.ar/noticias/20170412ApoyoEmprendedor.asp" target="-_blank">RICE</a></i></div>
               </div>
             </div>
           </div>
@@ -304,58 +317,58 @@
                 <div class="modal-content">
                   <header>
                     <h5>Te contactaremos</h5>
-                    <p></p>
-                  </header>
-                  <div id="mc_embed_signup">
-                    <form class="input-field col s12 m12 l12" action="https://campusolegario.us15.list-manage.com/subscribe/post?u=44d094ac72000b24ef7fd8bc2&amp;id=4f8723ac89" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate>
-                      <div class="row">
-                        <!-- Name Input -->
-                        <div class="input-field col s12 m12 l6">
-                          <i class="material-icons prefix">account_circle</i>
-                          <input maxlength="40" required type="text" name="FNAME" id="mce-FNAME" placeholder="Nombre">
-                        </div>
-                        <div class="input-field col s12 m12 l6 mc-field-group">
-                          <i class="material-icons prefix">account_circle</i>
-                          <input type="text" maxlength="40" id="mce-LNAME" name="LNAME" class="validate" required placeholder="Apellido">
-                        </div>
-                        <!-- Mail Input -->
-                        <div class="input-field col s12 m12 l6 mc-field-group">
-                          <i class="material-icons prefix">email</i>
-                          <input type="email" name="EMAIL" maxlength="50" id="mce-EMAIL" class="validate" required placeholder="Email">
-                        </div>
-                        <!-- Phone Input -->
-                        <div class="input-field col s12 m12 l6 mc-field-group">
-                          <i class="material-icons prefix">phone</i>
-                          <input type="tel" maxlength="15" id="mce-PHONE" name="PHONE" class="validate" required placeholder="Telefono">
-                        </div>
+          <p></p>
+          </header>
+          <div id="mc_embed_signup">
+            <form class="input-field col s12 m12 l12" action="https://campusolegario.us15.list-manage.com/subscribe/post?u=44d094ac72000b24ef7fd8bc2&amp;id=4f8723ac89" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate>
+              <div class="row">
+                <!-- Name Input -->
+                <div class="input-field col s12 m12 l6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input maxlength="40" required type="text" name="FNAME" id="mce-FNAME" placeholder="Nombre">
+                </div>
+                <div class="input-field col s12 m12 l6 mc-field-group">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input type="text" maxlength="40" id="mce-LNAME" name="LNAME" class="validate" required placeholder="Apellido">
+                </div>
+                <!-- Mail Input -->
+                <div class="input-field col s12 m12 l6 mc-field-group">
+                  <i class="material-icons prefix">email</i>
+                  <input type="email" name="EMAIL" maxlength="50" id="mce-EMAIL" class="validate" required placeholder="Email">
+                </div>
+                <!-- Phone Input -->
+                <div class="input-field col s12 m12 l6 mc-field-group">
+                  <i class="material-icons prefix">phone</i>
+                  <input type="tel" maxlength="15" id="mce-PHONE" name="PHONE" class="validate" required placeholder="Telefono">
+                </div>
 
-                        <input type="text" name="TFORM" id="mce-TFORM" value="Inversor" style="display: none;">
-                        <div class="col s12 m12 l12">
-                          <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                          </div>
-                          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                          <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                            <input type="text" name="b_44d094ac72000b24ef7fd8bc2_4f8723ac89" tabindex="-1" value="">
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Sign up button
+                <input type="text" name="TFORM" id="mce-TFORM" value="Inversor" style="display: none;">
+                <div class="col s12 m12 l12">
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_44d094ac72000b24ef7fd8bc2_4f8723ac89" tabindex="-1" value="">
+                  </div>
+                </div>
+              </div>
+              <!-- Sign up button
                       <div class="col s12 m12 l12 center">
                         <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-large waves-effect waves-light center indigo accent-3" tabindex="5"> enviar</i></button>
                       </div> -->
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Cerrar</a>
-                  <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn waves-effect waves-light center indigo accent-3"> enviar</i></button>
-                  </form>
-                </div>
-              </div>
-            </li>
-          </ul>
+          </div>
         </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Cerrar</a>
+          <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn waves-effect waves-light center indigo accent-3"> enviar</i></button>
+          </form>
+        </div>
+      </div>
+      </li>
+      </ul>
+      </div>
 
       </div>
       </div>
@@ -365,7 +378,7 @@
         <!-- Title -->
         <div class="row">
           <div class="div col s12">
-            <h5 class="white-text text-darken-4 left">Proceso.</h5>
+            <h5 class="white-text text-darken-4 left">Proceso</h5>
           </div>
         </div>
         <!-- content -->
@@ -389,7 +402,7 @@
                       </div>
                       <div class="card-reveal">
                         <div class="card-title grey-text text-darken-4">Pre-Aceleración <i class="material-icons right">close</i></div>
-                        <p>Si tenés una idea innovadora, con base tecnológica y escalable, te ayudamos en 4 meses a desarrollar un modelo de negocios,validarlo y tangibilizarlo en un mvp</p>
+                        <p>Si tenés una idea innovadora, con base tecnológica y escalable, te ayudamos en 4 meses a desarrollar un modelo de negocios, validarlo y tangibilizarlo en un mvp</p>
                       </div>
                       <div class="card-action center activator">
                         <a class="activator" style="cursor: pointer;">Ver más</a>
@@ -404,7 +417,7 @@
                     <div class="card grey-text text-darken-1">
                       <div class="card-content">
                         <span class="card-title grey-text text-darken-4">Aceleración</span>
-                        <p><i class="material-icons left">date_range</i>4 Meses</p>
+                        <p><i class="material-icons left">date_range</i>5 Meses</p>
                         <p><i class="material-icons left">monetization_on</i>Seed (Inversión público-privada)</p>
                         <p><i class="material-icons left">timer</i>Dedicación full-time</p>
                         <p><i class="material-icons left">flight</i>Tracción y crecimiento</p>
@@ -413,7 +426,7 @@
                       </div>
                       <div class="card-reveal">
                         <div class="card-title grey-text text-darken-4">Aceleración <i class="material-icons right">close</i></div>
-                        <p>Si tenés una startup innovadora, escalable y con base tecnológica con tracción y / o ventas, aceleramos tu salida al mercado y crecimiento mediante inversión, mentoria y un programa de aceleración.</p>
+                        <p>Si tenés una startup innovadora, escalable y con base tecnológica con tracción y / o ventas, aceleramos tu salida al mercado y crecimiento mediante inversión, mentoría y un programa de aceleración.</p>
                       </div>
                       <div class="card-action center activator">
                         <a class="activator" style="cursor: pointer;">Ver más</a>
@@ -431,13 +444,13 @@
                         <p><i class="material-icons left">date_range</i>Variable</p>
                         <p><i class="material-icons left">monetization_on</i>Serie A (Post inversión privada)</p>
                         <p><i class="material-icons left">timer</i>Dedicación full-time</p>
-                        <p><i class="material-icons left">flight</i>Desarrollo nuevos mercados</p>
+                        <p><i class="material-icons left">flight</i>Desarrollo de nuevos mercados</p>
                         <p><i class="material-icons left">home</i>Red de ecosistemas latam</p>
                         <p><i class="material-icons left">group</i>Articulación con fondos de inversión</p>
                       </div>
                       <div class="card-reveal">
                         <div class="card-title grey-text text-darken-4">Post-Aceleración <i class="material-icons right">close</i></div>
-                        <p>Si tu startup está creciendo, tiene un mercado definido y validado, te ayudamos con una ronda de inversión y mentorias para escalar y posicionarte.</p>
+                        <p>Si tu startup está creciendo, tiene un mercado definido y validado, te ayudamos con una ronda de inversión y mentorías para escalar y posicionarte.</p>
                       </div>
                       <div class="card-action center activator">
                         <a class="activator" style="cursor: pointer;">Ver más</a>
@@ -453,7 +466,7 @@
         <div class="col s12 m12 l12 center">
           <div class="row">
             <p class="white-text">Subite al vuelo más importante de tu vida.<br>Estamos embarcando para cambiar el mundo con nuestras ideas</p>
-            <a href="https://www.f6s.com/embarca2018-01" target="_blank" class="btn-large center waves-effect waves-light white-text"> Inscribite</a>
+            <a href="https://www.f6s.com/embarca2018-02/apply" target="_blank" class="btn-large center waves-effect waves-light white-text"> Inscribite</a>
           </div>
         </div>
     </section>
@@ -466,7 +479,7 @@
             <p>Hay un plan de vuelo. La idea es siempre salirnos de nuestra zona de confort y ellos son los que nos van a ayudar a lograrlo.</p>
           </div>
           <div class="col s12 m12 12 center grey-text text-darken-2">
-            <h5 class=" text-darken-4 left">El Equipo.</h5>
+            <h5 class=" text-darken-4 left">El Equipo</h5>
           </div>
         </div>
         <!-- content -->
@@ -475,7 +488,7 @@
           <div class="col s12 m6 l3">
             <div class="card indigo lighten-5 activator grey-text text-darken-4">
               <div class="card-image waves-effect waves-block waves-light activator">
-                <i class="material-icons right options">more_vert</i>
+                <i class="material-icons right white-text options">more_vert</i>
                 <img class="circle responsive-img activator" src="http://startupmendoza.org/wp-content/uploads/2017/11/xembarca-gonzalo-innocenti-blue.jpg.pagespeed.ic.14DWim8p69.jpg">
               </div>
               <div class="card-content">
@@ -494,6 +507,7 @@
                 <span class="card-title center">Gonci<i class="material-icons right">close</i></span>
                 <p><i>Una idea no vale nada si no está en un ecosistema que la ayude, y <b>Mendoza tiene un alto potencial </b>de desarrollar startups. La <b>Embarca</b> es una parte.</i></p>
                 <p>
+                  <a href="https://api.whatsapp.com/send?phone=542614182839&text=Hola%20Embarca!" target="_blank"><i class="fab fa-whatsapp embarcaIcon"></i></a>&nbsp;
                   <a href="https://www.instagram.com/gonzal.inn" target="_blank"><i class="fab fa-instagram embarcaIcon"></i></a>&nbsp;
                   <a href="https://www.linkedin.com/in/gonzaloinnocenti/" target="_blank"><i class="fab fa-linkedin embarcaIcon"></i></a>&nbsp;
                   <a href="mailto:gonz@embarca.tech?subject=Hola Gonci"><i class="fas fa-envelope embarcaIcon"></i> </a>
@@ -505,7 +519,7 @@
           <div class="col s12 m6 l3">
             <div class="card indigo lighten-5 activator grey-text text-darken-4">
               <div class="card-image waves-effect waves-block waves-light activator">
-                <i class="material-icons right options">more_vert</i>
+                <i class="material-icons right options white-text">more_vert</i>
                 <img class="circle responsive-img activator" src="img/valet.png">
               </div>
               <div class="card-content">
@@ -533,7 +547,7 @@
           <div class="col s12 m6 l3">
             <div class="card indigo lighten-5 activator grey-text text-darken-4">
               <div class="card-image waves-effect waves-block waves-light activator">
-                <i class="material-icons right options">more_vert</i>
+                <i class="material-icons right white-text options">more_vert</i>
                 <img class="circle responsive-img activator" src="http://startupmendoza.org/wp-content/uploads/2017/11/xembarca-belen-fernandez-blue.jpg.pagespeed.ic.Ay4Q3WqEqW.jpg">
               </div>
               <div class="card-content">
@@ -564,7 +578,7 @@
           <div class="col s12 m6 l3">
             <div class="card indigo lighten-5 activator grey-text text-darken-4">
               <div class="card-image waves-effect waves-block waves-light activator">
-                <i class="material-icons right options">more_vert</i>
+                <i class="material-icons right white-text options">more_vert</i>
                 <img class="circle responsive-img activator" src="img/emilf.png">
               </div>
               <div class="card-content">
@@ -574,9 +588,6 @@
                 </a>
                 <a href="http://arbusta.org/" target="_blank">
                   <div class="chip">Arbusta</div>
-                </a>
-                <a href="http://www.valos.org.ar/" target="_blank">
-                  <div class="chip">Valos</div>
                 </a>
               </div>
               <div class="card-reveal indigo lighten-5 grey-text text-darken-4">
@@ -605,7 +616,7 @@
         <!-- content -->
         <div class="row center">
           <!-- card 1 -->
-          <div class="col s12 m6 l4">
+          <div class="col s12 m6 l3">
             <div class="card indigo lighten-5 activator grey-text text-darken-4 waves-effect waves-block waves-light">
               <a href="https://www.linkedin.com/in/michaeldorka/" target="_blank">
                 <div class="card-image">
@@ -613,27 +624,44 @@
                 </div>
                 <div class="card-content">
                   <span class="card-title grey-text text-darken-4 activator">Michael Dorka</span>
-                  <div class="chip">UX & Product</div>
+                  <div class="chip">UX & UI</div>
+                  <div class="chip">Usabilidad </div>
                 </div>
               </a>
             </div>
           </div>
           <!-- card 2 -->
-          <div class="col s12 m6 l4">
+          <div class="col s12 m6 l3">
             <div class="card indigo lighten-5 activator grey-text text-darken-4 waves-effect waves-block waves-light">
-              <a href="https://www.linkedin.com/in/rbenzaquen/" target="_blank">
+              <a href="https://www.linkedin.com/in/alejandroprieto/" target="_blank">
                 <div class="card-image">
-                  <img class="circle responsive-img" src="http://startupmendoza.org/wp-content/uploads/2017/11/xembarca-rodrigo-benzaquen-blue.png.pagespeed.ic.VybLhwAAfj.jpg">
+                  <img class="circle responsive-img" src="img/advisors/alejandroprieto.png">
                 </div>
                 <div class="card-content">
-                  <span class="card-title grey-text text-darken-4 activator">Rodrigo benzaquen</span>
-                  <div class="chip">Technology & Product</div>
+                  <span class="card-title grey-text text-darken-4 activator">Alejandro Prieto</span>
+                  <div class="chip">UX & UI</div>
+                  <div class="chip">Usabilidad </div>
                 </div>
               </a>
             </div>
           </div>
           <!-- card 3 -->
-          <div class="col s12 m6 l4">
+          <div class="col s12 m6 l3">
+            <div class="card indigo lighten-5 activator grey-text text-darken-4 waves-effect waves-block waves-light">
+              <a href="https://www.linkedin.com/in/martinvivas/" target="_blank">
+                <div class="card-image">
+                  <img class="circle responsive-img" src="img/advisors/martinvivas.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title grey-text text-darken-4 activator">Martin Vivas</span>
+                  <div class="chip">UX & UI</div>
+                  <div class="chip">Usabilidad </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="col s12 m6 l3">
             <div class="card indigo lighten-5 activator grey-text text-darken-4 waves-effect waves-block waves-light">
               <a href="https://www.linkedin.com/in/santiago-barbera/" target="_blank">
                 <div class="card-image ">
@@ -641,11 +669,148 @@
                 </div>
                 <div class="card-content">
                   <span class="card-title grey-text text-darken-4 activator">Joaquín Barbera</span>
-                  <div class="chip">Social</div>
+                  <div class="chip">Impacto Social</div>
                 </div>
               </a>
             </div>
           </div>
+        </div>
+        <div class="row center">
+          <!-- card 1 -->
+          <div class="col s12 m6 l3">
+            <div class="card indigo lighten-5 activator grey-text text-darken-4 waves-effect waves-block waves-light">
+              <a href="https://www.linkedin.com/in/manuela-imas-anania-47a0a31b/" target="_blank">
+                <div class="card-image ">
+                  <img class="circle responsive-img" src="img/advisors/manuelaimas.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title grey-text text-darken-4 activator">Manuela Imas</span>
+                  <div class="chip">Impacto Social</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col s12 m6 l3">
+            <div class="card indigo lighten-5 activator grey-text text-darken-4 waves-effect waves-block waves-light">
+              <a href="https://www.linkedin.com/in/alvarogandia" target="_blank">
+                <div class="card-image">
+                  <img class="circle responsive-img" src="img/advisors/alvarogandia.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title grey-text text-darken-4 activator">Álvaro Gandía</span>
+                  <div class="chip">Blockchain</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="col s12 m6 l3">
+            <div class="card indigo lighten-5 activator grey-text text-darken-4 waves-effect waves-block waves-light">
+              <a href="https://www.linkedin.com/in/marianosoler" target="_blank">
+                <div class="card-image">
+                  <img class="circle responsive-img" src="img/advisors/marianosoler.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title grey-text text-darken-4 activator">Mariano Soler</span>
+                  <div class="chip">Modelo de Negocios</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="col s12 m6 l3">
+            <div class="card indigo lighten-5 activator grey-text text-darken-4 waves-effect waves-block waves-light">
+              <a href="https://www.linkedin.com/in/jose-luis-innocenti-297768172/" target="_blank">
+                <div class="card-image">
+                  <img class="circle responsive-img" src="img/advisors/joseluisinnocenti.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title grey-text text-darken-4 activator">Jose Luis Innocenti</span>
+                  <div class="chip">Finanzas</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row center">
+          <!-- card 1 -->
+          <div class="col s12 m6 l3">
+            <div class="card indigo lighten-5 activator grey-text text-darken-4 waves-effect waves-block waves-light">
+              <a href="https://www.linkedin.com/in/tadashitakaoka/" target="_blank">
+                <div class="card-image">
+                  <img class="circle responsive-img" src="img/advisors/diegonavarro.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title grey-text text-darken-4 activator">Diego Navarro</span>
+                  <div class="chip">Tecnología</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col s12 m6 l3">
+            <div class="card indigo lighten-5 activator grey-text text-darken-4 waves-effect waves-block waves-light">
+              <a href="https://www.linkedin.com/in/jegiuffra/" target="_blank">
+                <div class="card-image">
+                  <img class="circle responsive-img" src="img/advisors/jojogiuffra.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title grey-text text-darken-4 activator">Jojo Giufra</span>
+                  <div class="chip">Grow Hacking</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="col s12 m6 l3">
+            <div class="card indigo lighten-5 activator grey-text text-darken-4 waves-effect waves-block waves-light">
+              <a href="https://www.linkedin.com/in/tadashitakaoka/" target="_blank">
+                <div class="card-image">
+                  <img class="circle responsive-img" src="img/advisors/tadashitakaoka.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title grey-text text-darken-4 activator">Tadashi Takaoka</span>
+                  <div class="chip">Estrategias de Mercado</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="col s12 m6 l3">
+            <div class="card indigo lighten-5 activator grey-text text-darken-4 waves-effect waves-block waves-light">
+              <a href="https://www.linkedin.com/in/mar%C3%ADa-lorena-miranda-7b37b7b5/" target="_blank">
+                <div class="card-image">
+                  <img class="circle responsive-img" src="img/advisors/lorenamiranda.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title grey-text text-darken-4 activator">Lorena Miranda</span>
+                  <div class="chip">Testing</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row center">
+          <!-- card 1 -->
+          <!-- card 2 -->
+          <div class="col s12 m6 l3">
+            <div class="card indigo lighten-5 activator grey-text text-darken-4 waves-effect waves-block waves-light">
+              <a href="https://www.linkedin.com/in/jonathan-rodriguez-coach/" target="_blank">
+                <div class="card-image">
+                  <img class="circle responsive-img" src="img/advisors/jonathanrodriguez.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title grey-text text-darken-4 activator">Jonathan Rodriguez</span>
+                  <div class="chip">Agilidad</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <!-- card 4 -->
+
+        </div>
         </div>
     </section>
     <section id="contact" class="content container">
@@ -653,7 +818,7 @@
         <!-- Title -->
         <div class="row">
           <div class="div col s12">
-            <h5 class="grey-text text-darken-4 left">Contacto.</h5>
+            <h5 class="grey-text text-darken-4 left">Contacto</h5>
           </div>
         </div>
         <!-- content -->
@@ -661,7 +826,8 @@
           <h5>¿Aún no postulás?</h5>
           <p>Subite y salgamos de gira. Dudas, ideas, propuestas o saludos a todos los que te conocen, llenando el siguiente formulario. ¡Gracias!</p>
           <div class="row">
-            <div class="col s12 m12 l12 center">
+            <div class="col s12 m12 l12">
+              <a href="https://api.whatsapp.com/send?phone=542614182839&text=Hola%20Embarca!" target="_blank"><i class="fab fa-whatsapp socialIcon"></i></a>
               <a href="https://www.instagram.com/embarcamza/" target="_blank"><i class="fab fa-instagram socialIcon"></i></a>
               <a href="https://www.facebook.com/aceleradoraembarca/" target="_blank"><i class="fab fa-facebook socialIcon"></i></a>
               <a href="https://twitter.com/EmbarcaMza" target="_blank"><i class="fab fa-twitter socialIcon"></i></a>
@@ -725,7 +891,7 @@
         <!-- Title -->
         <div class="row">
           <div class="div col s12">
-            <h5 class="grey-text text-darken-4 left">Preguntas Frecuentes.</h5>
+            <h5 class="grey-text text-darken-4 left">Preguntas Frecuentes</h5>
           </div>
         </div>
         <!-- content -->
@@ -746,7 +912,9 @@
             </li>
             <li>
               <div class="collapsible-header"><i class="material-icons">question_answer</i>¿Qué programas ofrece Embarca?</div>
-              <div class="collapsible-body"><span>Ofrecemos un programa de "Pre-aceleración" para pasar de la idea a la acción, con una duración de 4 meses, dedicación part-time. Y también contamos con un programa de "Aceleración" para startups que ya tengan un prototipo validado y tracción / ventas. Dura 4 meses y es con dedicación full-time. Ambos programas empiezan en marzo y culminan en Julio con un "Investor Day" donde podrás mostrar tu startup a inversores y conseguir los fondos que necesitás para dar el próximo paso.</span></div>
+              <div class="collapsible-body"><span>Ofrecemos un programa de "Pre-aceleración" para pasar de la idea a la acción, con una duración de 4 meses, dedicación part-time.
+              <br>También contamos con un programa de "Aceleración" para startups que ya tengan un prototipo validado y tracción / ventas. Dura 5 meses y es con dedicación full-time.
+              <br> Hay dos llamados al año que culminan con un "Investor Day" donde podrás mostrar tu startup a inversores y conseguir los fondos que necesitás para dar el próximo paso.</span></div>
             </li>
             <li>
               <div class="collapsible-header"><i class="material-icons">question_answer</i>¿Quiénes pueden elegir la “Pre-aceleración”?</div>
@@ -762,19 +930,19 @@
             </li>
             <li>
               <div class="collapsible-header"><i class="material-icons">question_answer</i>¿En qué consiste la “Aceleración”?</div>
-              <div class="collapsible-body"><span>Te ofrecemos un programa de 4 meses para que desarrolles nuevas funcionalidades a tu solución, pruebes tu producto o servicio en otros mercados, y planifiques tu crecimiento. Te pedimos tengas disponibilidad full time para asistir de lunes a viernes a Campus Olegario y trabajes en el desarrollo de tu emprendimiento. Te ofrecemos mentorías, capacitación, lugar de trabajo, red de contacto e inversión entre 25.000 y 50.000 dólares a cambio del 10% de equity.</span></div>
+              <div class="collapsible-body"><span>Te ofrecemos un programa de 5 meses para que desarrolles nuevas funcionalidades a tu solución, pruebes tu producto o servicio en otros mercados, y planifiques tu crecimiento. Te pedimos tengas disponibilidad full time para asistir de lunes a viernes a Campus Olegario y trabajes en el desarrollo de tu emprendimiento. Te ofrecemos mentorías, capacitación, lugar de trabajo, red de contacto e inversión entre 25.000 y 50.000 dólares a cambio del 10% de equity.</span></div>
             </li>
             <li>
               <div class="collapsible-header"><i class="material-icons">question_answer</i>¿Cómo es el proceso de selección?</div>
-              <div class="collapsible-body"><span>La convocatoria para el primer llamado estará abierta del 15 de enero de 2018 al 18 de febrero. Al finalizar este periodo, evaluamos y seleccionamos entre 10 y 20 proyectos para la Pre-aceleración y 5 para la Aceleración. </span></div>
+              <div class="collapsible-body"><span>Finalizada la convocatoria, evaluamos y seleccionamos entre 10 y 20 proyectos para la Pre-aceleración y 5 para la Aceleración. </span></div>
             </li>
             <li>
               <div class="collapsible-header"><i class="material-icons">question_answer</i>¿Qué criterios se usan para evaluar los proyectos?</div>
               <div class="collapsible-body"><span>Evaluamos el nivel de innovación, el potencial de impacto (escalabilidad), la capacidad del equipo emprendedor y el modelo de negocios (rentabilidad, tracción, claridad de la idea).</span></div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="material-icons">question_answer</i>¿Cuándo comienzan los programas?</div>
-              <div class="collapsible-body"><span>Ambos programas comienzan en marzo y terminan en julio con el Investor Day, donde podrás presentar tu proyecto a inversores para conseguir los fondos necesarios para seguir creciendo.</span></div>
+              <div class="collapsible-header"><i class="material-icons">question_answer</i>¿Cuándo se abre la convocatoria?</div>
+              <div class="collapsible-body"><span>El primer llamado comienza en Febrero y el segundo en Julio.</span></div>
             </li>
           </ul>
         </div>
@@ -785,7 +953,7 @@
         <!-- Title -->
         <div class="row">
           <div class="div col s12">
-            <h5 class="grey-text text-darken-4 left">Los Medios hablan de <b>Embarca</b>.</h5>
+            <h5 class="grey-text text-darken-4 left">Los Medios hablan de <b>Embarca</b></h5>
           </div>
         </div>
         <!-- content -->
@@ -793,19 +961,19 @@
           <div class="row">
             <div class="col s12 m10 offset-m1 l4 center waves-effect waves-light">
               <a href="https://www.mdzol.com/nota/777760-embarca-abrio-su-convocatoria-para-emprendimientos-que-deseen-volar-alto/" target="_blank">
-              <img src="img/mediaLogoMdzol.png" alt="MDZ"  class="mediaLogo">
+              <img src="img/medios/mediaLogoMdzol.png" alt="MDZ"  class="mediaLogo">
               <p><i>“La primera aceleradora de Mendoza, recientemente reconocida en el Foro Argentino de Inversiones…”</i></p>
               </a>
             </div>
             <div class="col s12 m10 offset-m1 l4 center waves-effect waves-light">
               <a href="https://losandes.com.ar/article/view?slug=embarca-convoca-a-emprendedores-mendocinos-que-busque-acelerar-sus-ideas" target="_blank">
-                <img src="img/mediaLogoLosAndes.png" alt="Los Andes"  class="mediaLogo">
+                <img src="img/medios/mediaLogoLosAndes.png" alt="Los Andes"  class="mediaLogo">
                 <p><i>“…Su fin es apoyar a las startups…”</i></p>
               </a>
             </div>
             <div class="col s12 m10 offset-m1 l4 center waves-effect waves-light">
               <a href="http://ecocuyo.com/llega-embarca-connect-el-evento-que-une-a-empresas-con-talentos-locales/" target="_blank">
-                <img src="img/mediaLogoEcoCuyo.png" alt="EcoCuyo"  class="mediaLogo">
+                <img src="img/medios/mediaLogoEcoCuyo.png" alt="EcoCuyo"  class="mediaLogo">
                 <p><i> “Una gran iniciativa que tiene como objetivo principal el crecimiento del ecosistema emprendedor mendocino…”</i></p>
               </a>
             </div>
@@ -815,19 +983,19 @@
           <div class="row">
             <div class="col s12 m10 offset-m1 l4 center waves-effect waves-light">
               <a href="http://www.eleconomista.com.ar/2017-11-mejor-lugar-hoy-mundo-apostar-argentina/" target="_blank">
-                <img src="img/mediaLogoElEconomista.png" alt="ElEconomista"  class="mediaLogo">
+                <img src="img/medios/mediaLogoElEconomista.png" alt="ElEconomista"  class="mediaLogo">
                 <p><i>“Las aceleradoras tecnológicas ganadoras fueron NXTP LABS (CABA), EMBARCA (Mendoza)…”</i></p>
               </a>
             </div>
             <div class="col s12 m10 offset-m1 l4 center waves-effect waves-light">
               <a href="https://www.infobae.com/economia/finanzas-y-negocios/2018/01/15/quienes-estan-detras-de-los-fondos-de-inversion-que-son-socios-del-estado-en-el-impulso-de-los-emprendedores/" target="_blank">
-                <img src="img/mediaLogoInfobae.png" alt="Infobae"  class="mediaLogo">
+                <img src="img/medios/mediaLogoInfobae.png" alt="Infobae"  class="mediaLogo">
                 <p><i>“...Nació en el coworking mendocino Campus Olegario…”</i></p>
               </a>
             </div>
             <div class="col s12 m10 offset-m1 l4 center waves-effect waves-light">
               <a href="https://www.utdt.edu/ver_nota_prensa.php?id_nota_prensa=15120&id_item_menu=6" target="_blank">
-                <img src="img/mediaLogoUtdt.png" alt="Universidad Torcuato Di Tella"  class="mediaLogo">
+                <img src="img/medios/mediaLogoUtdt.png" alt="Universidad Torcuato Di Tella"  class="mediaLogo">
                 <p><i>”...Ganamos una de las 10 licencias para fondos de aceleración...”</i></p>
               </a>
             </div>
@@ -837,7 +1005,7 @@
           <div class="row">
             <div class="col s12 m10 offset-m1 offset-l4 l4 center waves-effect waves-light">
               <a href="https://bit.ly/2K9nkaZ" target="_blank">
-                <img src="img/mediaLogoBoletin.png" alt="Boletin Oficial de la República Argentina"  class="mediaLogo">
+                <img src="img/medios/mediaLogoBoletin.png" alt="Boletin Oficial de la República Argentina"  class="mediaLogo">
                 <p>Boletín Oficial de la República Argentina</p>
               </a>
             </div>
@@ -855,7 +1023,7 @@
         <!-- Title -->
         <div class="row">
           <div class="div col s12">
-            <h5 class="grey-text text-darken-4 left">Las StartUps que pisan el <b><i>acelerador</i></b>.</h5>
+            <h5 class="grey-text text-darken-4 left">Las StartUps que pisan el <b><i>acelerador</i></b></h5>
           </div>
         </div>
         <!-- content -->
@@ -864,26 +1032,16 @@
             <a href="https://www.kindapp.io/" target="_blank">
               <div class="col s12 m10 offset-m1 l4 center waves-effect">
                 <img src="img/embarcados/kindapp.png" alt="KindApp">
-                <p>KindApp</p>
               </div>
             </a>
             <a href="https://www.tarjetapalta.com/" target="_blank">
               <div class="col s12 m10 offset-m1 l4 center waves-effect">
                 <img src="img/embarcados/palta.png" alt="Tarjeta Palta">
-                <p>Tarjeta Palta</p>
               </div>
             </a>
-
-            <!-- <a href="https://www.cuidobien.com/" target="_blank">
-            <div class="col s12 m10 offset-m1 l4 center waves-effect">
-                <img src="img/embarcados/cuidobien.png" alt="Cuido Bien">
-                <p>Cuido Bien</p>
-            </div>
-            </a> -->
             <a href="http://eggeducacion.com/" target="_blank">
               <div class="col s12 m10 offset-m1 l4 center waves-effect">
-                <img src="img/embarcados/egg.png" alt="Egg Educación">
-                <p>Egg Educación</p>
+                <img src="img/embarcados/eggtech.png" alt="Egg Educación">
               </div>
             </a>
           </div>
@@ -891,15 +1049,35 @@
         <div class="col s12 m12 l12 grey-text text-darken-2 hide-on-med-and-down">
           <div class="row">
             <a href="https://www.invuelto.com/" target="_blank">
-              <div class="col s12 m10 offset-m1 l4 offset-l1 center waves-effect">
+              <div class="col s12 m10 offset-m1 l4 center waves-effect">
                 <img src="img/embarcados/invuelto.png" alt="InVuelto">
-                <p>InVuelto</p>
               </div>
             </a>
             <a href="https://mecubro.com" target="_blank">
-              <div class="col s12 m10 offset-m1 l4 offset-l2 center waves-effect">
+              <div class="col s12 m10 offset-m1 l4 center waves-effect">
                 <img src="img/embarcados/mecubro.png" alt="Me Cubro">
-                <p>MeCubro</p>
+              </div>
+            </a>
+            <a href="http://www.cerebrocurioso.com.ar/" target="_blank">
+              <div class="col s12 m10 offset-m1 l4 center waves-effect">
+                <img src="img/embarcados/cerebrocurioso.png" alt="Cerebro Curioso">
+              </div>
+            </a>
+          </div>
+          <div class="row">
+            <a href="http://tucuota.com" target="_blank">
+              <div class="col s12 m10 offset-m1 l4 center waves-effect">
+                <img src="img/embarcados/tucuota.png" alt="InVuelto">
+              </div>
+            </a>
+            <a href="https://elegirseguro.com/" target="_blank">
+              <div class="col s12 m10 offset-m1 l4 center waves-effect">
+                <img src="img/embarcados/elegirseguro.png" alt="Elegir Seguro">
+              </div>
+            </a>
+            <a href="https://www.polargentina.com/" target="_blank">
+              <div class="col s12 m10 offset-m1 l4 center waves-effect">
+                <img src="img/embarcados/polargentina.png" alt="Pol Argentina">
               </div>
             </a>
           </div>
@@ -921,7 +1099,7 @@
           </div>
           <!-- Col 2 -->
           <div class="col s12 m6 l4 center">
-            <a href="https://goo.gl/maps/t7w5bUkVaJy" class="waves-effect waves-dark btn-large indigo-text text-accent-4 white" target="_blank"><i class="material-icons left">location_on</i>Campus Olegario</a>
+            <a href="http://www.campusolegario.org/" class="waves-effect waves-dark btn-large indigo-text text-accent-4 white" target="_blank"><i class="material-icons left">location_on</i>Campus Olegario</a>
           </div>
           <!-- Col 3 -->
           <div class="col s12 m12 l4 center">
@@ -931,15 +1109,17 @@
               <li><a href="https://www.instagram.com/embarcamza/" target="_blank"><i class="fab fa-instagram embarcaIcon card-action"></i></a></li>
               <li> <a href="mailto:hola@embarca.tech?subject=HOLA"><i class="fas fa-envelope embarcaIcon"></i></a>
               </li>
+              <li><a href="https://api.whatsapp.com/send?phone=542614182839&text=Hola%20Embarca!" target="_blank"><i class="fab fa-whatsapp embarcaIcon"></i></a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-copyright">
         <div class="container center white-text">
-          &copy; 2018 All Right Reserved - Designed by <span class="red-text text-darken-2"><a href="http://frani.cc" target="_blank">Frani</a></span> - Made it with <span class="red-text text-darken-2">♥</span> from <b>Mendoza</b> to the world.
+          &copy; 2018 All Right Reserved - Designed by <span class="red-text text-darken-2"><a href="http://frani.me" target="_blank">Frani</a></span> - Made it with <span class="red-text text-darken-2">♥</span> from <b>Mendoza</b> to the world.
         </div>
       </div>
+      <div id="google_translate_element" class="grey lighten-2"></div>
     </footer>
 
     <!-- Jquery & Materialize -->
