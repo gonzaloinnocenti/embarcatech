@@ -7,6 +7,9 @@
      -ms-transform: scale(1.1);
      transform: scale(1.1);
     }
+    .card:hover{
+      box-shadow: 0px 1px 1px 3px rgba(0,0,0,0.1);
+    }
     .card-image {
       overflow: hidden !important;
       border-radius: 25px !important;
@@ -17,8 +20,10 @@
     }
 
     .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
-      box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.2);
+      box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
     }
+
+
 
     body {
       font-family: 'Montserrat', sans-serif;
@@ -84,7 +89,8 @@
     /* chips */
     .chip {
       background-color: rgba(0, 0, 255, 0.3);
-      color: #00f;
+      color: #fff;
+      height: auto;
       -webkit-transition: background-color .2s ease;
       -o-transition: background-color .2s ease;
       transition: background-color .2s ease;
@@ -449,7 +455,7 @@
       margin-bottom: 10px;
     }
     #contact .socialIcon {
-      font-size: 3rem;
+      font-size: 5rem;
       margin-left: 2rem;
     }
 
