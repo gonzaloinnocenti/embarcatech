@@ -1,564 +1,639 @@
+@font-face {
+  font-family: "bebas thin";
+  src: url(../Fonts/bebas-neue/BebasNeue\ Thin.otf);
+}
+
+@font-face {
+  font-family: "bebas regular";
+  src: url(../Fonts/bebas-neue/BebasNeue\ Regular.otf);
+}
+
+@font-face {
+  font-family: "bebas book";
+  src: url(../Fonts/bebas-neue/BebasNeue\ Book.otf);
+}
+
 /* generals */
+.card:hover .card-image img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
-   .card:hover .card-image img {
-     -webkit-transform: scale(1.1);
-     -moz-transform: scale(1.1);
-     -o-transform: scale(1.1);
-     -ms-transform: scale(1.1);
-     transform: scale(1.1);
-    }
-    .card:hover{
-      box-shadow: 0px 1px 1px 3px rgba(0,0,0,0.1);
-    }
-    .card-image {
-      overflow: hidden !important;
-      border-radius: 25px !important;
-      margin: 2px 2px;
-    }
-    .card .card-image img {
-      transition: .3s ease !important;
-    }
+.card:hover {
+  box-shadow: 0px 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
 
-    .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
-      box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
-    }
+.card-image {
+  overflow: hidden !important;
+  border-radius: 5px !important;
+}
 
+.card .card-image img {
+  transition: .3s ease !important;
+}
 
+#teamT .card {
+  min-height: 30rem !important;
+}
 
-    body {
-      font-family: 'Montserrat', sans-serif;
-      color: #fff;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      -o-user-select: none;
-      user-select: none;
-    }
+#team .card {
+  min-height: 26rem;
+}
 
-    /* Sections */
-    section {
-      background-color: #fff;
-    }
-    section > .row {
-      margin-bottom: 0px !important;
-    }
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+}
 
-    #team a:hover :not(.chip), #contact a:hover, #media a:hover p, #cases a:hover p {
-      color: rgb(102, 102, 255) !important;
-      -webkit-transition: color .5s ease;
-      -o-transition: color .5s ease;
-      transition: color .5s ease;
-      transition-property: color;
-      transition-duration: 0.5s;
-      transition-timing-function: ease;
-      transition-delay: 0s;
-    }
+body {
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
 
-    #startups, #contact, #investors, #team, #faq {
-      background-repeat: repeat;
-      background-image: url("../img/bgPattern.png");
-      transition:width 0.1s;
-       -webkit-transition:width 0.1s; /* Safari and Chrome */
-       -moz-transition:width 0.1s; /* Firefox 4 */
-       -o-transition:width 0.1s; /* Opera */
-       transition:width 0.1s; /* Opera */
-    }
+/* Sections */
+section {
+  background-color: #fff;
+}
 
-    h5 {
-      font-size: 2.5em;
-      margin: 1em 0em 0em 0em;
-    }
-    p {
-      font-size: 1.5rem;
-    }
+section>.row {
+  margin-bottom: 0px !important;
+}
 
+#team a:hover :not(.chip), #contact a:hover, #media a:hover p, #cases a:hover p {
+  color: rgb(102, 102, 255) !important;
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease;
+  transition-property: color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
 
-    /* cards */
+#contact, #investors, #team, #faq {
+  background-repeat: repeat;
+  background-image: url("../img/bg/embarcapattern2.png");
+  background-size: 10em;
+  transition: width 0.1s;
+  -webkit-transition: width 0.1s;
+  /* Safari and Chrome */
+  -moz-transition: width 0.1s;
+  /* Firefox 4 */
+  -o-transition: width 0.1s;
+  /* Opera */
+  transition: width 0.1s;
+  /* Opera */
+}
 
-    .card, .card-reveal {
-      border-radius: 25px !important;
-    }
-    .card p {
-      font-size: 1.2rem;
-    }
-    .card .embarcaIcon {
-      margin: 1rem 1rem 1rem 1rem;
-      font-size: 2.5rem;
-    }
+h5 {
+  font-size: 3em;
+  font-family: 'bebas regular';
+  margin: 1em 0em 0em 0em;
+}
 
-    /* chips */
-    .chip {
-      background-color: rgba(0, 0, 255, 0.3);
-      color: #fff;
-      height: auto;
-      -webkit-transition: background-color .2s ease;
-      -o-transition: background-color .2s ease;
-      transition: background-color .2s ease;
-      transition-property: background-color;
-      transition-duration: 0.2s;
-      transition-timing-function: ease;
-      transition-delay: 0s;
-    }
+p {
+  font-size: 1.5rem;
+}
 
-    .chip:hover {
-      background-color: rgba(0, 0, 255, 0.6);
-    }
+/* cards */
+.card, .card-reveal {
+  border-radius: 5px !important;
+}
 
-    /* Modals */
-    .modal {
-      border-radius: 25px;
-    }
-    .modal {
+.card p {
+  font-size: 1.2rem;
+}
 
-    }
+.card .embarcaIcon {
+  margin: 1rem 1rem 1rem 1rem;
+  font-size: 2rem;
+}
 
-    /* content */
+/* chips */
+.chip {
+  background-color: rgba(0, 0, 255, 0.3);
+  color: #fff;
+  height: auto;
+  -webkit-transition: background-color .2s ease;
+  -o-transition: background-color .2s ease;
+  transition: background-color .2s ease;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
 
-    .content {
-      min-width: 100vw;
-      min-height: 100vh;
-      width: 100% !important;
-      height: 100% !important;
-    }
+.chip:hover {
+  background-color: rgba(0, 0, 255, 0.6);
+}
 
-    /* Icons */
+/* Modals */
+.modal {
+  border-radius: 5px;
+}
 
-    .embarcaIcon {
-      margin: 1rem 1rem 1rem 1rem;
-      font-size: 2em;
-    }
+.modal {}
 
-    li span {
-      display: block;
-      font-size: 1.2rem;
-      text-align: center;
-    }
+/* content */
+.content {
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100% !important;
+  height: 100% !important;
+}
 
-    .verticalCenter {
-      position: relative;
-      top: 20vh;
-    }
+/* Icons */
+.embarcaIcon {
+  margin: 1rem 1rem 1rem 1rem;
+  font-size: 2em;
+}
 
-    /* Buttons */
+li span {
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+}
 
-    .btn, .btn-large, .btn-small, .btn-flat {
-      border-radius: 25px !important;
-    }
+.verticalCenter {
+  position: relative;
+  top: 20vh;
+}
+
+/* Buttons */
+.btn, .btn-large, .btn-small, .btn-flat {
+  border-radius: 5px !important;
+  line-height: 60px;
+}
 
 /* Call to Embarcar */
-    #callToEmbarcar {
-      display: none !important;
-      position: fixed;
-      top: 0;
-      z-index: 999;
-    }
+#callToEmbarcar {
+  display: none !important;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
 
 /* welcome */
+/* Background Video and color */
+#welcome {
+  background-color: rgba(48, 79, 254, 0.8);
+}
 
-    /* Background Video and color */
-    #welcome {
-      background-color: rgba(48, 79, 254, 0.8);
-    }
-    #bgvid {
-      position: fixed;
-      z-index: -100;
-      top: auto;
-      left: 50%;
-      -ms-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-      min-width: 100vw;
-      min-height: 100vh;
-    }
+#bgvid {
+  position: fixed;
+  z-index: -100;
+  top: auto;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  min-width: 100vw;
+  min-height: 100vh;
+}
 
-    /* navbar */
+/* navbar */
+#welcome nav {
+  background-color: rgba(255, 255, 255, 0) !important;
+  box-shadow: none !important;
+  padding: 0em 1rem 0rem 1rem;
+}
 
-    #welcome nav {
-      background-color: rgba(255, 255, 255, 0) !important;
-      box-shadow: none !important;
-      padding: 0em 1rem 0rem 1rem;
-    }
+#welcome .mainLogo {
+  filter: grayscale(100%) invert(100%) brightness(10);
+  height: 5em;
+}
 
-    #welcome .mainLogo {
-      filter: grayscale(100%) invert(100%) brightness(10);
-      height: 5em;
-    }
+#welcome nav .mainLogo {
+  filter: grayscale(100%) invert(100%) brightness(10);
+  height: 1em;
+}
 
-    #welcome nav .mainLogo {
-      filter: grayscale(100%) invert(100%) brightness(10);
-      height: 1em;
-    }
+#welcome .navbarLogo {
+  filter: grayscale(100%) invert(100%) brightness(10);
+  margin-top: 0.8rem;
+  height: 2rem;
+}
 
-    #welcome .navbarLogo {
-      filter: grayscale(100%) invert(100%) brightness(10);
-      margin-top: 0.8rem;
-      height: 2rem;
-    }
+#welcome .navbarLogoLi {
+  background-color: #304ffe;
+}
 
-    #welcome .navbarLogoLi {
-      background-color: #304ffe;
-    }
+/* for navbarScroll */
+#welcome .nav-up {
+  transform: translateY(-150%) !important;
+}
 
-     /* for navbarScroll */
-
-    #welcome .nav-up {
-      transform: translateY(-150%) !important;
-      }
-
-    #welcome .sidenav-trigger {
-      background-color: #304ffe;
-      border-radius: 100%;
-      position: fixed !important;
-      height: 56px !important;
-      z-index: 997 !important;
-      margin: 20px !important;
-    }
+#welcome .sidenav-trigger {
+  background-color: #304ffe;
+  border-radius: 100%;
+  position: fixed !important;
+  height: 56px !important;
+  z-index: 997 !important;
+  margin: 20px !important;
+}
 
 /* countdownBanner */
-
 #countdownBanner {
   display: none;
   position: fixed;
   text-align: center;
   background: #262626;
-  box-shadow: 0 2px 0 rgba(38,38,38,0.2);
+  box-shadow: 0 2px 0 rgba(38, 38, 38, 0.2);
   z-index: 99;
   width: 100%;
   top: 0;
 }
+
 #countdownBanner p {
   font-size: 1em;
 }
+
 #countdownBanner span {
   color: #c62828;
 }
+
 #countdownBanner a {
   margin: -0.5em 1em 0em 1em;
 }
+
 /* Mindepro */
-  #mindepro p {
-    font-size: 1.2em;
-  }
-  #mindepro img{
-    height: 6em;
-    margin: 2em 0em 0em 0em;
-  }
+#mindepro p {
+  font-size: 1.2em;
+}
+
+#mindepro img {
+  height: 6em;
+  margin: 2em 0em 0em 0em;
+}
+
 /* Process */
+#process {
+  background-image: -webkit-linear-gradient(left, #eca9f7 10%, #b6c1ff);
+  background-image: -o-linear-gradient(left, #D500F9 10%, #304FFE);
+  /*background-image: linear-gradient(to right, #D500F9 10%, #304FFE);*/
+}
 
-  #process {
-    background-image: -webkit-linear-gradient(left, #eca9f7 10%, #b6c1ff);
-  	background-image: -o-linear-gradient(left, #D500F9 10%, #304FFE);
-  	/*background-image: linear-gradient(to right, #D500F9 10%, #304FFE);*/
-  }
+#process .row {
+  margin-bottom: 5em;
+}
 
-  #process .row {
-    margin-bottom: 5em;
-  }
+#process .btn, #process .btn-large, #process .btn-flat {
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
-  #process .btn, #process .btn-large, #process .btn-flat {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
+#process .timeline {
+  position: relative;
+}
 
-  #process .timeline {
-    position: relative;
-  }
+#process .timeline .timeline-event {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
-  #process .timeline .timeline-event {
-    position: relative;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
+#process .timeline .timeline-event .timeline-content {
+  position: relative;
+  width: calc(50% - 50px);
+}
 
+#process .timeline .timeline-event::before {
+  display: block;
+  content: "";
+  width: 2px;
+  height: calc(50% - 30px);
+  position: absolute;
+  background: #fff !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  left: calc(50% - 1px);
+  top: 0;
+}
+
+#process .timeline .timeline-event::after {
+  display: block;
+  content: "";
+  width: 2px;
+  height: calc(50% - 30px);
+  position: absolute;
+  background: #fff !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  left: calc(50% - 1px);
+  top: calc(50% + 30px);
+}
+
+#process .timeline .timeline-event:first-child::before {
+  display: none;
+}
+
+#process .timeline .timeline-event:last-child::after {
+  display: none;
+}
+
+#process .timeline .timeline-event:nth-child(even) .timeline-content {
+  margin-left: calc(50% + 50px);
+}
+
+#process .timeline .timeline-event:nth-child(odd) .timeline-content {
+  margin-left: 0;
+}
+
+#process .timeline .timeline-badge {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #fff !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  top: calc(50% - 20px);
+  right: calc(50% - 20px);
+  border-radius: 25%;
+  cursor: default;
+}
+
+#process .timeline .timeline-badge i {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+@media (max-width: 600px) {
   #process .timeline .timeline-event .timeline-content {
-    position: relative;
-    width: calc(50% - 50px);
+    width: calc(100% - 70px);
   }
 
   #process .timeline .timeline-event::before {
-    display: block;
-    content: "";
-    width: 2px;
-    height: calc(50% - 30px);
-    position: absolute;
-    background: #fff !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    left: calc(50% - 1px);
-    top: 0;
+    left: 19px;
   }
 
   #process .timeline .timeline-event::after {
-    display: block;
-    content: "";
-    width: 2px;
-    height: calc(50% - 30px);
-    position: absolute;
-    background: #fff !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    left: calc(50% - 1px);
-    top: calc(50% + 30px);
-  }
-
-  #process .timeline .timeline-event:first-child::before {
-    display: none;
-  }
-
-  #process .timeline .timeline-event:last-child::after {
-    display: none;
+    left: 19px;
   }
 
   #process .timeline .timeline-event:nth-child(even) .timeline-content {
-    margin-left: calc(50% + 50px);
+    margin-left: 70px;
   }
 
   #process .timeline .timeline-event:nth-child(odd) .timeline-content {
-    margin-left: 0;
+    margin-left: 70px;
   }
 
   #process .timeline .timeline-badge {
-    display: block;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #fff !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    top: calc(50% - 20px);
-    right: calc(50% - 20px);
-    border-radius: 50%;
-    cursor: default;
+    left: 0;
   }
+}
 
-  #process .timeline .timeline-badge i {
-    font-size: 25px;
-    line-height: 40px;
-  }
+#process ul li {
+  width: 100%;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+}
 
-  @media (max-width: 600px) {
-    #process .timeline .timeline-event .timeline-content {
-      width: calc(100% - 70px);
-    }
-    #process .timeline .timeline-event::before {
-      left: 19px;
-    }
-    #process .timeline .timeline-event::after {
-      left: 19px;
-    }
-    #process .timeline .timeline-event:nth-child(even) .timeline-content {
-      margin-left: 70px;
-    }
-    #process .timeline .timeline-event:nth-child(odd) .timeline-content {
-      margin-left: 70px;
-    }
-    #process .timeline .timeline-badge {
-      left: 0;
-    }
-  }
-   #process ul li {
-     width: 100%;
-     color: #000;
-     background-color: #fff;
-     border-radius: 25px;
-   }
-   #process .collapsible {
-     border-radius: 25px;
-   }
+#process .collapsible {
+  border-radius: 5px;
+}
 
-   #process ul li .card-title {
-     margin-top: 0.2em;
-   }
+#process ul li .card-title {
+  margin-top: 0.2em;
+}
 
-   #process ul li .collapsible-header {
-     -webkit-transition: color .3s ease;
-     -o-transition: color .3s ease;
-     transition: color .3s ease;
-     transition-property: color;
-     transition-duration: 0.3s;
-     transition-timing-function: ease;
-     transition-delay: 0s;
-   }
+#process ul li .collapsible-header {
+  -webkit-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
 
-   #process ul li .collapsible-header:hover {
-     color: grey;
-   }
+#process ul li .collapsible-header:hover {
+  color: grey;
+}
 
-   #process .textAlignCenter {
-     position: absolute;
-     padding: 10px 0px 0px 7px !important;
-   }
+#process .textAlignCenter {
+  position: absolute;
+  padding: 10px 0px 0px 7px !important;
+}
 
-   #process .collapsible-header, .collapsible-body {
-     background-color: #fff;
-   }
+#process .collapsible-header, .collapsible-body {
+  background-color: #fff;
+}
 
-    #process .embarcaIcon {
-      margin: 1rem 1rem 0rem 1rem;
-      font-size: 2em;
-    }
+#process .embarcaIcon {
+  margin: 1rem 1rem 0rem 1rem;
+  font-size: 2em;
+}
 
-    #process li span {
-      font-size: 2em;
-      text-align: center;
-    }
-
+#process li span {
+  font-size: 2em;
+  text-align: center;
+}
 
 /* Team */
+#team {
+  color: #fff;
+  background-image: url("../img/bg/embarcapattern1.png");
+  background-repeat: repeat;
+  background-size: 15em;
+}
 
-    #team .card .card-image img {
-      display: block;
-      position: relative;
-      width: 100%;
-    }
-    #team p {
-      text-align: left !important;
-    }
+#team .card .card-image img {
+  display: block;
+  position: relative;
+  width: 100%;
+}
 
-    #team .options {
-      position: absolute !important;
-      right: 0.5em !important;
-      top: 0.5em !important;
-    }
+#team p {
+  text-align: left !important;
+}
+
+#team .options {
+  position: absolute !important;
+  right: 0.5em !important;
+  top: 0.5em !important;
+}
 
 /* Startup */
+#startups {
+  background-repeat: repeat;
+  background-image: url("../img/bg/embarcapattern3.png");
+  background-size: 10em;
+  background-color: #abb8d7;
+  transition: width 0.1s;
+  -webkit-transition: width 0.1s;
+  /* Safari and Chrome */
+  -moz-transition: width 0.1s;
+  /* Firefox 4 */
+  -o-transition: width 0.1s;
+  /* Opera */
+  transition: width 0.1s;
+  /* Opera */
+}
 
-    #startups {
-      background-color: #e8eaf6;
-    }
+#startups ul li, #investors ul li {
+  margin-top: 5em;
+}
 
-    #startups ul li, #investors ul li {
-      margin-top: 5em;
-    }
-    #startups .numberCounterUp {
-      font-size: 2.5em;
-      margin-top: .2em;
-    }
-
+#startups .numberCounterUp {
+  font-size: 3em;
+  margin-top: .2em;
+}
 
 /* Inverstors */
-    #investors {
-      text-align: right;
-    }
 
-    #investors .numberCounterUp2 {
-      font-size: 1.3em;
-    }
+#investors {
+  background-repeat: repeat;
+  background-image: url("../img/bg/embarcapattern2.png");
+  background-size: 10em;
+  background-color: #003f54;
+  transition: width 0.1s;
+  -webkit-transition: width 0.1s;
+  /* Safari and Chrome */
+  -moz-transition: width 0.1s;
+  /* Firefox 4 */
+  -o-transition: width 0.1s;
+  /* Opera */
+  transition: width 0.1s;
+  /* Opera */
+  text-align: right;
+}
 
+#investors .numberCounterUp2 {
+  font-size: 2em;
+}
 
 /*Contact*/
+#contact {
+  background-color: #e8eaf6;
+}
 
-    #contact {
-      background-color: #e8eaf6;
-    }
-    #contact .card-content {
-      padding: 24px 24px 4px 24px;
-    }
-    #contact .card-content .row {
-      margin-bottom: 10px;
-    }
-    #contact .socialIcon {
-      font-size: 5rem;
-      margin-left: 2rem;
-    }
+#contact .card-content {
+  padding: 24px 24px 4px 24px;
+}
+
+#contact .card-content .row {
+  margin-bottom: 10px;
+}
+
+#contact .socialIcon {
+  font-size: 5rem;
+  margin-left: 2rem;
+}
 
 /* Media */
+#media {
+  background-color: #e8eaf6;
+}
 
-    #media {
-      background-color: #e8eaf6;
-    }
-    #media p, #cases p {
-      font-size: 1rem;
-      color: #616161 !important;
-    }
-    #media .col {
-      margin-bottom: 30px;
-    }
+#media p, #cases p {
+  font-size: 1rem;
+  color: #616161 !important;
+}
 
-    #media img {
-      width: 80%;
-      margin: 3em 0 0 0;
-      -webkit-filter: grayscale(70%) ;
-      -o-filter: grayscale(70%) ;
-      filter: grayscale(70%) ;
-      -webkit-transition: ease 0.3s ;
-      -o-transition: ease 0.3s ;
-      transition: ease 0.3s ;
-    }
-    #media .center:hover img  {
-      -webkit-filter: grayscale(0%);
-      -o-filter: grayscale(0%);
-      filter: grayscale(0%);
-    }
+#media .col {
+  margin-bottom: 30px;
+}
+
+#media img {
+  width: 80%;
+  margin: 3em 0 0 0;
+  -webkit-filter: grayscale(70%);
+  -o-filter: grayscale(70%);
+  filter: grayscale(70%);
+  -webkit-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+#media .center:hover img {
+  -webkit-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
 
 /* FAQ */
+#faq {
+  background-repeat: repeat;
+  background-image: url("../img/bg/embarcapattern5.png");
+  background-size: 10em;
+}
 
-    #faq .collapsible-header {
-      color: #424242;
-      font-weight:900;
-    }
-    #faq .collapsible-body span {
-      text-align: left;
-    }
+#faq .collapsible-header {
+  color: #424242;
+  font-weight: 900;
+}
+
+#faq .collapsible-body span {
+  text-align: left;
+}
 
 /* Cases */
+#cases img {
+  width: 60%;
+  margin: 3em 0 0 0;
+  -webkit-filter: grayscale(70%);
+  -o-filter: grayscale(70%);
+  filter: grayscale(70%);
+  -webkit-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
 
-    #cases img {
-      width: 60%;
-      margin: 3em 0 0 0;
-      -webkit-filter: grayscale(70%);
-      -o-filter: grayscale(70%);
-      filter: grayscale(70%);
-      -webkit-transition: ease 0.3s ;
-      -o-transition: ease 0.3s ;
-      transition: ease 0.3s ;
-    }
-    #cases img:hover {
-      -webkit-filter: grayscale(0%);
-      -o-filter: grayscale(0%);
-      filter: grayscale(0%);
-    }
+#cases img:hover {
+  -webkit-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
 
 /* Footer */
+footer .mainLogo {
+  filter: grayscale(100%) invert(100%) brightness(10);
+  height: 2.5em;
+  position: relative;
+  margin-bottom: 1em;
+  bottom: -0.5em;
+}
 
-    footer .mainLogo {
-      filter: grayscale(100%) invert(100%) brightness(10);
-      height: 2.5em;
-      position: relative;
-      margin-bottom: 1em;
-      bottom: -0.5em;
-    }
+footer li {
+  display: inline-block;
+  margin-left: 1em;
+}
 
-    footer li {
-      display: inline-block;
-      margin-left: 1em;
-    }
+.page-footer {
+  background-color: #304ffe;
+}
 
-    .page-footer {
-      background-color: #304ffe;
-    }
+footer a {
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
 
-    footer a {
-      color: rgba(255, 255, 255, 0.8);
-      -webkit-transition: color .3s ease;
-      -o-transition: color .3s ease;
-      transition: color .3s ease;
-      transition-property: color;
-      transition-duration: 0.3s;
-      transition-timing-function: ease;
-      transition-delay: 0s;
-    }
+footer .footer-copyright {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
 
-    footer .footer-copyright {
-      background-color: rgba(255, 255, 255, 0.1) !important;
-    }
+footer a:hover {
+  color: #fff;
+}
 
-    footer a:hover {
-      color: #fff;
-    }
+footer {
+  z-index: -5;
+}
 
-    footer {
-      z-index: -5;
-    }
-
-    footer .embarcaIcon {
-      margin: 0 0 0 0 !important;
-      font-size: 2.5rem !important;
-    }
+footer .embarcaIcon {
+  margin: 0 0 0 0 !important;
+  font-size: 2.5rem !important;
+}
